@@ -10,13 +10,12 @@ Steven N. Karp and Kevin Purbhoo,
 [version 2, 16 June 2026](https://arxiv.org/abs/2309.04645v2).
 These are the journal and preprint references for the same paper.
 
-本仓库独立整理了 Karp–Purbhoo 论文中已经用于
-[Smallram](https://github.com/zhangteng2000/Smallram) 的形式化结果及其完整本地证明依赖。
-下表明确列出完成范围；本仓库不宣称已形式化 KP 全文。
-期刊文献为图片所示的 JAMS 论文，DOI 为 **10.1090/jams/1087**；
-对应预印本为 **arXiv:2309.04645**。完整书目信息见 [CITATION.bib](CITATION.bib)。
+This repository extracts the Karp–Purbhoo results used by
+[Smallram](https://github.com/zhangteng2000/Smallram), together with their complete
+local proof dependencies. Coverage is limited to the results listed below.
+Both publication references are recorded in [CITATION.bib](CITATION.bib).
 
-## Coverage / 已形式化的结果
+## Coverage
 
 Numbering follows arXiv version 2. Names below are in the `ModifiedCartan` namespace.
 
@@ -41,11 +40,10 @@ isomorphisms, or the paper's full positivity and real Schubert-calculus applicat
 The correspondence interface asserts the two existence directions; it does not
 assert a bijection on all nonzero scalar-action subspaces.
 
-上述对应关系允许复参数重合或为零。这里的完成范围不包括定理 1.3(iii) 的完整群代数
-Plücker 关系、1.3(vi) 的重数结论、概形同构以及 KP 全文的正性应用。
-证明与原论文的差异记录在 [FORMALIZATION_MAP.md](FORMALIZATION_MAP.md)。
+Proof choices and divergences from the paper are recorded in
+[FORMALIZATION_MAP.md](FORMALIZATION_MAP.md).
 
-## Build and verify / 构建与核验
+## Build and verify
 
 Prerequisites: Git, Lean's `elan` toolchain manager, and Python 3 for the verification script.
 
@@ -75,7 +73,7 @@ Lean: `v4.34.0-rc1`.
 mathlib: `de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11`.
 The exact dependency commits are pinned in `lake-manifest.json`.
 
-## Verification record / 核验记录
+## Verification record
 
 The initial release passed **4394 build jobs** and a recursive audit of
 **4108 declarations**, including **3423 theorem declarations**. These counts
@@ -90,7 +88,7 @@ evidence: [verification log](verification/logs/initial-verification.log),
 [declaration audit](verification/logs/initial-all-declarations.log), and
 [exact theorem signatures and dependencies](verification/logs/initial-kp-results.log).
 
-## Provenance / 来源
+## Provenance
 
 The 571 supporting source modules were extracted from
 [Smallram at e92e331](https://github.com/zhangteng2000/Smallram/tree/e92e33137405545c528c546e4a2e4f9103c63dfb)
