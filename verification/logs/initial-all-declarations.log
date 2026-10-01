@@ -1,0 +1,2 @@
+AUDIT PASSED: 4108 declarations, including 3423 theorem declarations.
+Actual logical dependencies: [Quot.sound, Classical.choice, propext].

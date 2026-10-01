@@ -1,0 +1,4602 @@
+{
+  "upstream_repository": "https://github.com/zhangteng2000/Smallram",
+  "upstream_commit": "e92e33137405545c528c546e4a2e4f9103c63dfb",
+  "root_modules": [
+    "ModifiedCartan.KPCorrespondence",
+    "ModifiedCartan.PluckerTranslation",
+    "ModifiedCartan.SpechtCharacterProjection"
+  ],
+  "module_count": 571,
+  "files": [
+    {
+      "path": "FewInflection/AnalyticLogBranch.lean",
+      "sha256": "aa59a58b34e61ec0d07de6e48a26e22a1d22f9c64dd2f80794169740ea2e89bc",
+      "imports": [
+        "Mathlib.Analysis.Complex.BranchLogRoot",
+        "Mathlib.Analysis.SpecialFunctions.Complex.Analytic"
+      ]
+    },
+    {
+      "path": "FewInflection/CanonicalLocalGauge.lean",
+      "sha256": "f9c910916b0a0937b0064007cee37b442a2dd3d083a6f4e13410792d4fd5309b",
+      "imports": [
+        "FewInflection.AnalyticLogBranch",
+        "FewInflection.ScalarWronskian",
+        "FewInflection.FundamentalAnalytic",
+        "Mathlib.Analysis.Convex.Contractible"
+      ]
+    },
+    {
+      "path": "FewInflection/Definitions.lean",
+      "sha256": "6dace5b4b55dfee501eb078a544100f23585884462b17a74bfe04d798e624b30",
+      "imports": [
+        "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas",
+        "Mathlib.Analysis.Complex.ValueDistribution.LogCounting.Basic",
+        "Mathlib.LinearAlgebra.Matrix.Block",
+        "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+        "Mathlib.LinearAlgebra.Matrix.Nondegenerate",
+        "Mathlib.Order.LiminfLimsup",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "path": "FewInflection/DerivativeMinors.lean",
+      "sha256": "3a6fd2a57255b510b3bc5b978371c0a0b3d10092d9c403d962b2c681f267a7b1",
+      "imports": [
+        "FewInflection.Results"
+      ]
+    },
+    {
+      "path": "FewInflection/FundamentalAnalytic.lean",
+      "sha256": "c77a7fa6afcbf3f32a2d06757f14d195ae5099988152af409ad207839ac046cb",
+      "imports": [
+        "FewInflection.FundamentalOperator"
+      ]
+    },
+    {
+      "path": "FewInflection/FundamentalOperator.lean",
+      "sha256": "0d82ad528f55d684b904de719d3f05b4609e0cbc0ab50faa39bc85694e81efe1",
+      "imports": [
+        "FewInflection.WronskianRegularity",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse"
+      ]
+    },
+    {
+      "path": "FewInflection/Gauge.lean",
+      "sha256": "a8faefdf23f9aa1d0c658e54056c378917191a469db755d5bf4d4a2a812fe22a",
+      "imports": [
+        "FewInflection.Definitions"
+      ]
+    },
+    {
+      "path": "FewInflection/Jensen.lean",
+      "sha256": "cb97099e8f05c7e14de4b2402a235b8855d0670dab0b8d88818c0672f760d13b",
+      "imports": [
+        "FewInflection.Definitions",
+        "Mathlib.Analysis.Complex.JensenFormula",
+        "Mathlib.Analysis.Meromorphic.Divisor"
+      ]
+    },
+    {
+      "path": "FewInflection/PluckerBounds.lean",
+      "sha256": "1284d2228604751d59458a6c67f1e43f5df888d3baf97253daf32bdda1634412",
+      "imports": [
+        "FewInflection.Results"
+      ]
+    },
+    {
+      "path": "FewInflection/PolynomialJets.lean",
+      "sha256": "b97b404b0ea6847491c3f1ee7af0fb065479616c7f073b8ccf68f45fdbffbca5",
+      "imports": [
+        "FewInflection.DerivativeMinors",
+        "Mathlib.Analysis.Calculus.Deriv.Polynomial",
+        "Mathlib.Algebra.Polynomial.Taylor"
+      ]
+    },
+    {
+      "path": "FewInflection/Results.lean",
+      "sha256": "56559b661bf9038b61f8fb8b2bada688dbcc0ffc40f4855386c1a57542b30268",
+      "imports": [
+        "FewInflection.Definitions"
+      ]
+    },
+    {
+      "path": "FewInflection/ScalarWronskian.lean",
+      "sha256": "85e82c1d077c1bcbff0ce1cfd4b77d564304b051c253bbef93d803947ff506a5",
+      "imports": [
+        "FewInflection.Gauge"
+      ]
+    },
+    {
+      "path": "FewInflection/WronskianRegularity.lean",
+      "sha256": "ce1f1fef42282c94db41cfa6375a5d491c0d655298776e7c6b86c0479fd7f474",
+      "imports": [
+        "FewInflection.Jensen"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AddableRowsCornerEquiv.lean",
+      "sha256": "f2ff7e9abb8b9e847464841611ba48bec735d6c9d68fd7e02c8e55cd1327ded3",
+      "imports": [
+        "ModifiedCartan.YoungCornerRowDrops"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AllSubsetInsertion.lean",
+      "sha256": "8491fca8a0c8dd2af5f2b2d3a700ace5e9f0ff77e0f5a6afd8e56c0b36873f9f",
+      "imports": [
+        "ModifiedCartan.SizedSubsetInsertion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AlternantCauchyExpansion.lean",
+      "sha256": "4eb1d2624354f6600d7508742b6e5d735d826eb5e5de22922dd6e909680c8e5e",
+      "imports": [
+        "ModifiedCartan.FormalFrobeniusKernel",
+        "ModifiedCartan.VandermondeAlternantMaps",
+        "ModifiedCartan.PolynomialScalarSeries",
+        "ModifiedCartan.FiniteCauchySeries"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AlternantCoefficients.lean",
+      "sha256": "82869bc0444122539bf39a3638abbfcfd9339268f07074bea1685cff8801c202",
+      "imports": [
+        "ModifiedCartan.FiniteAlternants"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AlternantHomogeneity.lean",
+      "sha256": "96dffa2d1ecd9835a9c630c4ae87ff51ac5b780c62ef4163ff10e06bdbd16b52",
+      "imports": [
+        "ModifiedCartan.AlternantCoefficients",
+        "Mathlib.RingTheory.MvPolynomial.Homogeneous"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AlternatingDualDescent.lean",
+      "sha256": "d544644e39c5886c6f795c67eeaf650545e4cf37af7dd546f91f5d66ad933b61",
+      "imports": [
+        "Mathlib.LinearAlgebra.Alternating.Basic",
+        "Mathlib.LinearAlgebra.Dual.Lemmas",
+        "Mathlib.Data.Complex.Basic",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AlternatingDualDeterminant.lean",
+      "sha256": "7fa1460a1af19aae3a22fd76f8b9a890214c259c6d3a5e758e118e9c49e1cff0",
+      "imports": [
+        "ModifiedCartan.AlternatingDualDescent",
+        "Mathlib.LinearAlgebra.Determinant"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AlternatingPolynomialExt.lean",
+      "sha256": "374d53dadd4e3b7b9f1079d85c2033629fb37d770e9927551ebf3adaa847004c",
+      "imports": [
+        "ModifiedCartan.OrderedPartitionExponents",
+        "ModifiedCartan.PolynomialDeterminantCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AmbientFactorizationLaurentSeries.lean",
+      "sha256": "dbcdd89e796d7bbf7a1b6ebabce8e57765bed04a8e415c65e1cc127d70b577bd",
+      "imports": [
+        "ModifiedCartan.AmbientFactorizationParameters",
+        "ModifiedCartan.SupportedDataColoringTransport",
+        "ModifiedCartan.SupportedPowerSumQuadratic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AmbientFactorizationParameters.lean",
+      "sha256": "85c314d35c514e1e8a04b05c85c309c12a510c37f5f52f02359bbe0c1a8a058c",
+      "imports": [
+        "ModifiedCartan.SupportedDataRestriction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/AmbientFactorizationResidue.lean",
+      "sha256": "0c9432601c0f1629f5c0b3e42ef9cf546b07e27bab8ec82f1804b8ee11a911d5",
+      "imports": [
+        "ModifiedCartan.AmbientFactorizationLaurentSeries",
+        "ModifiedCartan.ZFactorizationResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BernsteinCompositionResidue.lean",
+      "sha256": "b59d72e77278755ce0063d0309890a96eb802c34110ca5e710b781176ea02b85",
+      "imports": [
+        "ModifiedCartan.CompositionResidueTransport",
+        "ModifiedCartan.ScaledMonomialEvaluation",
+        "ModifiedCartan.FiniteBernstein"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BernsteinCompositionSeries.lean",
+      "sha256": "e2d53e074fc6676f568eba0e2d39e7346ea27960d5dd7ffb2336451030bb51b0",
+      "imports": [
+        "ModifiedCartan.FiniteBernsteinLaurent",
+        "ModifiedCartan.BernsteinCompositionResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BernsteinFactorResidue.lean",
+      "sha256": "16f0459b47bf523892631fc425491f9ace2ea0cf914c57051bab4783b83d992a",
+      "imports": [
+        "ModifiedCartan.BernsteinLaurentFactors",
+        "ModifiedCartan.LaurentCompositionExpansion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BernsteinLaurentFactors.lean",
+      "sha256": "a9526a76ea1aecfb897b5f1145310e43783c0f583b0ad651f8dd6fc60c30b341",
+      "imports": [
+        "ModifiedCartan.FiniteBernsteinLaurent"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BernsteinScalarResidue.lean",
+      "sha256": "d89a8e62862a150ac8f4fcae1ea246b624005e87d1cc88b06611dc5a4ee85cc8",
+      "imports": [
+        "ModifiedCartan.BernsteinLaurentFactors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BetheAlgebra.lean",
+      "sha256": "89f91408f8f58990322c06c65e3d4ae17430feea996c4d0644504f6959eddc47",
+      "imports": [
+        "ModifiedCartan.PolynomialValueSpan",
+        "ModifiedCartan.KPCoefficientDegree",
+        "ModifiedCartan.KPGeneratedCommutative",
+        "ModifiedCartan.KPColumnSupportedExpansion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BetheAlgebraIdentification.lean",
+      "sha256": "f3f5e13c1eba11b38832d1ad808c0b536e122c82896a50d5943c556b100a02df",
+      "imports": [
+        "ModifiedCartan.KPUniversalAdjugateIdentity",
+        "ModifiedCartan.KPGeneratedShift"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BlockInflation.lean",
+      "sha256": "fa83dbcd3edad617eb211612865332e4e8276c45668391661fc85bcf8a6eab8a",
+      "imports": [
+        "Mathlib.GroupTheory.Perm.Fin",
+        "Mathlib.Data.Fintype.BigOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BlockInflationColorings.lean",
+      "sha256": "1330b0ae76949b9985505a0b8f3d7d0cf8c1202ce16ba0c2a3ff8444d9b24665",
+      "imports": [
+        "ModifiedCartan.BlockInflation",
+        "ModifiedCartan.CycleColorings"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BlockInflationPowerSums.lean",
+      "sha256": "08c32e3bd0e56f5f9346c515c1f3173d9f8703d6de453fc8853d507d29eed496",
+      "imports": [
+        "ModifiedCartan.BlockInflationColorings",
+        "ModifiedCartan.CycleWeightedPowers"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BoundedPartitionSquare.lean",
+      "sha256": "003bc50509e698f70bddf06197f3d46b47f6ce8756f8a73ee09a8e4ab2ce3288",
+      "imports": [
+        "ModifiedCartan.SizedYoungDiagrams",
+        "ModifiedCartan.PartitionBoxes"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/BranchingImageEquality.lean",
+      "sha256": "20b9d040e067aab33339bfeed467870e5419f1964db1ec33e4fd74addd5822ac",
+      "imports": [
+        "ModifiedCartan.CornerDimensionSum"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CanonicalCoefficients.lean",
+      "sha256": "418caeb31f9ca52c2de0fa705056fffcc580821c89f17e828842b9ef13ad0af2",
+      "imports": [
+        "ModifiedCartan.FundamentalOperator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CanonicalGauge.lean",
+      "sha256": "1c86b92e97b7154576ea9c1deebb020487b1730362bf5500660b7263e0850dbe",
+      "imports": [
+        "ModifiedCartan.CanonicalCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CauchyKernelCoefficients.lean",
+      "sha256": "053c2c647fd6a7f4a90b161c73a7bd19ac981ed7c1c2eb12113b1bb18b8bbeb3",
+      "imports": [
+        "ModifiedCartan.HomogenizedGeometricSeries",
+        "ModifiedCartan.GeometricProductCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CentralCharacterOperator.lean",
+      "sha256": "73c51a45d0fd9f52b581fd6f6bd0f6843efce1152a196007543d3bc9c2fc1bba",
+      "imports": [
+        "Mathlib.RepresentationTheory.Character",
+        "Mathlib.RepresentationTheory.Maschke",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterIrreducibleImages.lean",
+      "sha256": "a8164183435fe0795abfaad7fe51f1583d350caaae9f08438656ea17b680e094",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorFixed"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterOrthogonalInvariant.lean",
+      "sha256": "faaf9953f40fe28835f241533cde63048412d9fecfcb64f37d2970322e1f9006",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorFixed",
+        "Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterOrthogonalProjection.lean",
+      "sha256": "6722d4709d01b0d8eb9d3e4cc1a608dc2a3d38af8d203d0523798e3e0f805e70",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorRange",
+        "ModifiedCartan.CharacterOrthogonalInvariant"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterPositive.lean",
+      "sha256": "6db0a4224857f646e6463c210eb4ac5a172001bc99da8595ebca84b96d927639",
+      "imports": [
+        "ModifiedCartan.CharacterProjectionBound",
+        "Mathlib.Analysis.InnerProductSpace.Positive"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterProjectionBound.lean",
+      "sha256": "8a303faf4f68cc0ebd4f407bb374e8464cc038913f07d64ade162accea978949",
+      "imports": [
+        "ModifiedCartan.CharacterOrthogonalProjection"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterProjectorBasic.lean",
+      "sha256": "b08c6934915c49f61a3185379c1e8c9f1979d2fe2ce1676c76933d1faf6d92d1",
+      "imports": [
+        "ModifiedCartan.CharacterScalarAction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterProjectorFixed.lean",
+      "sha256": "ee7572591d30b8e8341696ba6f319f95b37a5917981fc0e96e4cb6ef6d6009ed",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorBasic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterProjectorOrthogonal.lean",
+      "sha256": "fcf97248a58f1564ec8554190b97344f850298944bff9a530d5c3720e9409f9d",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorRange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterProjectorRange.lean",
+      "sha256": "4e981860f1a3607761f92b6a0c9ff0e0d85c2b5322fcecd8af0698c1bc5475cf",
+      "imports": [
+        "ModifiedCartan.CharacterIrreducibleImages",
+        "ModifiedCartan.GroupSubmoduleIntertwiners"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterProjectorRank.lean",
+      "sha256": "97eeee4e8f06f56fd6e15e9c293b1c32a9e51001fc019e77a7871c71baa5eae3",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorRange",
+        "Mathlib.LinearAlgebra.Trace"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterScalarAction.lean",
+      "sha256": "ad11abb5fb5657de1ba71bafb5e1b44c9f1307f26a9ef67857efaf1a142cd65d",
+      "imports": [
+        "ModifiedCartan.CentralCharacterOperator",
+        "Mathlib.Analysis.Complex.Polynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CharacterSimpleGeneration.lean",
+      "sha256": "319c667d0c99aa7a62df8dac6a8fd012b3ffca8785be6ae9e7bd2d7cbd9963d5",
+      "imports": [
+        "ModifiedCartan.CentralCharacterOperator",
+        "Mathlib.Algebra.Module.Submodule.RestrictScalars"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ClassFunctionIsotypicAction.lean",
+      "sha256": "ce49cf156cafd9d7d8c45284ebdf227030edea984821b32e8dabe7bd7a73830e",
+      "imports": [
+        "ModifiedCartan.ClassFunctionScalarAction",
+        "ModifiedCartan.CharacterProjectorRange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ClassFunctionOperator.lean",
+      "sha256": "041bd57f5af662ce2153de2ab642dc6aa6bbb90834a579e66f3ca662ae48af35",
+      "imports": [
+        "ModifiedCartan.CharacterScalarAction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ClassFunctionRegularCoefficients.lean",
+      "sha256": "9f088cff24e77665b5a17750d1b327f87eccf02ae64281e07638e091e5a86d24",
+      "imports": [
+        "ModifiedCartan.ClassFunctionScalarAction",
+        "ModifiedCartan.CharacterProjectorBasic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ClassFunctionScalarAction.lean",
+      "sha256": "0b3595d1cd7773030e4d2fbc977ae92f74859f55bb6dbb81d8b20e71e116e531",
+      "imports": [
+        "ModifiedCartan.ClassFunctionOperator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ClassFunctionSpechtExpansion.lean",
+      "sha256": "9583af5db9a5196ecbde76fb57728f81a6ef5ef6e11ccb08cf5c6a77965f75b3",
+      "imports": [
+        "ModifiedCartan.ClassFunctionIsotypicAction",
+        "ModifiedCartan.SpechtProjectorCompleteness"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ClassScalarIsotypic.lean",
+      "sha256": "62cd6ccfe2ca2febceec17350136f36d9213e381e4f9e26cf5359c319baefcb5",
+      "imports": [
+        "ModifiedCartan.ClassWeightedOperator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ClassWeightedOperator.lean",
+      "sha256": "4b3e664864d67f81910712db8373d81cbb4b60630cfd88dc22bd192d06e6d27f",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorRange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ClosedJointEigenprofiles.lean",
+      "sha256": "0f05b04f941c67c7575ae1a7143a6ed460730a981ab69b30cb35f0469df643b5",
+      "imports": [
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.Analysis.Normed.Module.FiniteDimension",
+        "Mathlib.Topology.Maps.Proper.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColoringColumnCancellation.lean",
+      "sha256": "33e8694f4c6921f499b7869c207d09131218c268a50ce4d6da6bb45ba863dba2",
+      "imports": [
+        "ModifiedCartan.WeightColoringRepresentation",
+        "ModifiedCartan.YoungTabloidCancellation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColoringDegrees.lean",
+      "sha256": "7bc617267865b539fba554b90f1dda5330197c4bd789aad26286cae97793375a",
+      "imports": [
+        "ModifiedCartan.ColoringOrbits",
+        "ModifiedCartan.FiniteCyclePolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColoringMultisets.lean",
+      "sha256": "318a50724a9858f7b5c881a2311dda546096dbde3a72c79a5e0c80b26b2920f0",
+      "imports": [
+        "Mathlib.Data.Multiset.Fintype",
+        "Mathlib.Data.Sym.Basic",
+        "Mathlib.Data.Fintype.EquivFin",
+        "Mathlib.Logic.Equiv.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColoringOrbits.lean",
+      "sha256": "fd133590080cbe26db86461a98c26013830b0d3932c4c36367ac665601b17306",
+      "imports": [
+        "ModifiedCartan.ColoringMultisets",
+        "ModifiedCartan.WeightedBurnside",
+        "Mathlib.Data.Fintype.Vector"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColumnMinorCramer.lean",
+      "sha256": "202c4f6de518d33318e941498c786e90ebab43ce9787ec04bfd3fe6689bcd35a",
+      "imports": [
+        "ModifiedCartan.ColumnPartitionMinorOrders"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColumnMinorDifferentialEquation.lean",
+      "sha256": "33de86861e6d357d205fb0b76548d1ca372a01a5b095468654266fb53cffbda3",
+      "imports": [
+        "ModifiedCartan.ColumnMinorCramer"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColumnPartitionMinorOrders.lean",
+      "sha256": "0ffe7654ea70b11b0e61d5a14fb43983572619ae0c9e64f83e06954cb5b64c19",
+      "imports": [
+        "ModifiedCartan.ColumnPartitions",
+        "ModifiedCartan.PartitionMinorDerivative",
+        "Mathlib.GroupTheory.Perm.Fin"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColumnPartitions.lean",
+      "sha256": "c62e46b2736dd0ccba7b354265c234ee4969a72532c89aae5f77366e5e984b2c",
+      "imports": [
+        "ModifiedCartan.RowColumnFiniteCharacters",
+        "ModifiedCartan.KPOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColumnPermutations.lean",
+      "sha256": "a75f167637198cdaaca842bfeff69e35a88cf0acf4bdab08f5e0a837c49f6c41",
+      "imports": [
+        "ModifiedCartan.YoungColumns"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColumnRearrangement.lean",
+      "sha256": "fa1c05b8eefd371ec3a874cc986636b03fa9df3fcff465e2713d87c2eac0116b",
+      "imports": [
+        "ModifiedCartan.ColumnPermutations",
+        "ModifiedCartan.StrictPermutationWeight",
+        "ModifiedCartan.YoungFillings"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColumnSorting.lean",
+      "sha256": "1d6058544626198a259b0c788c4a6ba3bc0cfce6e52d1cd09c43904a29d57712",
+      "imports": [
+        "ModifiedCartan.SortedColumnLabels"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ColumnStandardSpanning.lean",
+      "sha256": "046ad0df3d28c86ec68c534f462a6d224249c9a9e595797b1ed3497ce4812180",
+      "imports": [
+        "ModifiedCartan.ColumnSorting",
+        "ModifiedCartan.FillingPolytabloids"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CommonEigenspaceAlgebra.lean",
+      "sha256": "789f0e8582ae0d29a1b771e0a523d39d4ef82446d5c77bcb0b634c43ff2fb919",
+      "imports": [
+        "ModifiedCartan.KPJointEigenvalues"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CommonEigenvectors.lean",
+      "sha256": "0415abcde227feb4087671ea39f96e2d191fbf535efe2ae2d50b7375a85066bc",
+      "imports": [
+        "ModifiedCartan.CyclicCentralizer",
+        "Mathlib.LinearAlgebra.Eigenspace.Triangularizable"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ComplementMarkerClassification.lean",
+      "sha256": "4cf004819f95c94ffa8f3f46d7c85c9ca5688926066c718e13a02db527d21dbe",
+      "imports": [
+        "ModifiedCartan.ComplementMarkerDegrees"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ComplementMarkerDegrees.lean",
+      "sha256": "c9d2f23280fc1e36bee8cebffdc3c8c6fd9161a26e5469d2d656d41406d225fd",
+      "imports": [
+        "ModifiedCartan.MarkerAssignmentDegree",
+        "Mathlib.Tactic.Tauto"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CompositionBoundaryResidue.lean",
+      "sha256": "3facb144da0791a1e861c00ca466487042f70ae054293ed635740ee064189cf8",
+      "imports": [
+        "ModifiedCartan.CompositionLaurentWeights",
+        "ModifiedCartan.MarkerSquarefreeJacobian"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CompositionLaurentWeights.lean",
+      "sha256": "7cfeb47724a6cd9420d15af63ecfd3dcc7e34017abf0e2adef1d4cf15a0b6903",
+      "imports": [
+        "ModifiedCartan.LaurentMarkerEquiv",
+        "ModifiedCartan.CompositionMarkerResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CompositionMarkerResidue.lean",
+      "sha256": "3afc838703f46e218ebee59f798ab19f531b5142a300721e36ade2997f53bd5f",
+      "imports": [
+        "ModifiedCartan.CompositionMarkerSubstitution"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CompositionMarkerSubstitution.lean",
+      "sha256": "7536c24bdf560fe598ea0da6178bd3bf7319c3fe8f36f22f836e8dd5c53bf4c2",
+      "imports": [
+        "ModifiedCartan.LaurentChangeVariableResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CompositionResidueTransport.lean",
+      "sha256": "ec95126a02e933bdb7ba84c4c4e4b484cf5d21fd1a7e0efdff12a56bda4e4c95",
+      "imports": [
+        "ModifiedCartan.ShiftedCompositionAlphabet"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CornerCharacterContributions.lean",
+      "sha256": "3ced1044cf8a5f122727df5b5e9c64f5ab8e8c631d21c7eb67244d973801a678",
+      "imports": [
+        "ModifiedCartan.SpechtRowCharacters",
+        "ModifiedCartan.RowFiltrationCharacterRelabel"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CornerDimensionSum.lean",
+      "sha256": "be210e8c5b238d1a1db6f7c538cee7872e2040266362782a6e9a4fa758a5bef9",
+      "imports": [
+        "ModifiedCartan.DeletionImageDimension",
+        "ModifiedCartan.CornerTableauCount"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CornerPredecessors.lean",
+      "sha256": "8fa8a825c17415be60a9cd8dff5bfaecd868bf6dfcf056aff9a8910dc278c819",
+      "imports": [
+        "ModifiedCartan.PartitionCorners",
+        "ModifiedCartan.FinitePartitions",
+        "Mathlib.Data.Finset.Max"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CornerRemainingAlphabet.lean",
+      "sha256": "8cb91843efdad53b06b38e9f08142ee7a92e76b19a7f62c27e3342deb199fb46",
+      "imports": [
+        "ModifiedCartan.CornerCharacterContributions"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CornerRemovalGeometry.lean",
+      "sha256": "ce70c6fa5a73870622f7ad3de58288489eb9c6976834437d7e635841d0ead0a5",
+      "imports": [
+        "ModifiedCartan.CornerPredecessors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CornerTableauCount.lean",
+      "sha256": "d5a6b7bc323947f55a73f88e29083819f23a0d60a9dca75076422fbbecc2b523",
+      "imports": [
+        "ModifiedCartan.CornerTableauEquiv",
+        "ModifiedCartan.StandardPolytabloidBasis"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CornerTableauEquiv.lean",
+      "sha256": "4e426d9e12b0671c630ba59060b3f48ecd3c957f87e99580ce4cea3a7fbd4977",
+      "imports": [
+        "ModifiedCartan.TableauExtendLast"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CycleColorings.lean",
+      "sha256": "7035e76f1f7df0912ecf4673145ca391d9ae29e8d837146ce6e87083a02d280d",
+      "imports": [
+        "Mathlib.GroupTheory.Perm.Cycle.Basic",
+        "Mathlib.Data.Fintype.Quotient"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CyclePolynomialCoefficients.lean",
+      "sha256": "f31f2a8322ad8b8b96e07c4a410059cb8267d9228178825049980338278cf402",
+      "imports": [
+        "ModifiedCartan.WeightColoringRepresentation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CycleSubsetLaurentProduct.lean",
+      "sha256": "afce51dc8f382eb9807fa0f6667dabcdd308213a82654485edac5665181cfbed",
+      "imports": [
+        "ModifiedCartan.LaurentCompositionExpansion",
+        "Mathlib.Algebra.BigOperators.Ring.Finset"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CycleUnionCoordinates.lean",
+      "sha256": "1792c894cf5037425d0dfcc8931b3d224fd8b841d357e32c86f5cce1e8d9322f",
+      "imports": [
+        "ModifiedCartan.PermutationCycleFibers",
+        "ModifiedCartan.InvariantCycleSets",
+        "Mathlib.Data.Fintype.BigOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CycleUnionPowerSums.lean",
+      "sha256": "16e34a72b7048a6e5e5ae09c8141d1ba617571d0bcce2966d860dace5618381d",
+      "imports": [
+        "ModifiedCartan.CycleUnionCoordinates",
+        "ModifiedCartan.TransitiveSigmaColorings"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CycleUnionSign.lean",
+      "sha256": "7d82353cf26a13742df53242df14ce8cdf45c91edab372473f91edc9e4927400",
+      "imports": [
+        "ModifiedCartan.CycleUnionCoordinates",
+        "ModifiedCartan.TransitivePermutationSign",
+        "ModifiedCartan.SigmaPermutationSign"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CycleUnionSignTwist.lean",
+      "sha256": "c7e3864a2f8ff863ed8d71ae69abbebfec746210f8acc218fc71af91f6a7bb9c",
+      "imports": [
+        "ModifiedCartan.CycleUnionSign",
+        "ModifiedCartan.InvariantCycleSubsets"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CycleWeightedPowers.lean",
+      "sha256": "3823728b8895329b9fd3267347430a3323960353f324788df40f0562ef0390af",
+      "imports": [
+        "ModifiedCartan.CycleColorings",
+        "ModifiedCartan.FixedPointPermutationSums",
+        "Mathlib.Algebra.BigOperators.Ring.Finset"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CyclicCentralizer.lean",
+      "sha256": "dc5b38204b76d38bbd9bda18ce54845993e1eff4741cf852cf1cd77b242e5417",
+      "imports": [
+        "ModifiedCartan.ClassWeightedOperator",
+        "Mathlib.RingTheory.Adjoin.Polynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/CyclicSpechtCharacters.lean",
+      "sha256": "c8e82af45d290943772d7c4d1bc89ebe243666d926f6f7e5c0f0dc4972c3d818",
+      "imports": [
+        "ModifiedCartan.SpechtRepresentation",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/DeletionImageDimension.lean",
+      "sha256": "3b0977042e213e067c4b4d7a02ed7696dbe7d35ba0b08344f2bff81d5f3500db",
+      "imports": [
+        "ModifiedCartan.DeletionImageSpecht",
+        "ModifiedCartan.SubmoduleImageRankNullity",
+        "ModifiedCartan.SpechtFiltrationRanks"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/DeletionImageSpecht.lean",
+      "sha256": "0717b492a2b34ba9a0386aa992b5060462885a9edeb61c01a8acbda5bec33e64",
+      "imports": [
+        "ModifiedCartan.PolytabloidDeletion",
+        "ModifiedCartan.SpechtRowFiltration"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/DescendingVandermonde.lean",
+      "sha256": "cf54baf807c36ca76ed454378de58dfa6d11cd1bda98c967019e67a5028d7a77",
+      "imports": [
+        "ModifiedCartan.VandermondeAlternantMaps"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/DeterminantFirstPivot.lean",
+      "sha256": "88e114f5379bf3aa146c8905e75e4451244619c1b51984cf9df63ee963d07df3",
+      "imports": [
+        "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/DividedAlternantTranslation.lean",
+      "sha256": "06b9ce5bdef5eab8b521d8f0cba5021d89a55b5b2760f49fbcc59088d0703e06",
+      "imports": [
+        "ModifiedCartan.PolynomialAlternantTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/DividedPowerAlternants.lean",
+      "sha256": "ccdc25b875d94eeb8c325cd40c7bce5d9031fe2fca42e38135b5cd2994b34a83",
+      "imports": [
+        "ModifiedCartan.MvDividedPowerNormalization",
+        "ModifiedCartan.DividedPowerPolynomials",
+        "ModifiedCartan.AlternantCauchyExpansion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/DividedPowerPartitionMinors.lean",
+      "sha256": "25f912d818daed11ff827d3b2da9d011cd89a0d8e730706b04ea44e70ab90f63",
+      "imports": [
+        "ModifiedCartan.DividedPowerPolynomials",
+        "ModifiedCartan.OrderedDeltaDeterminant",
+        "ModifiedCartan.MinorTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/DividedPowerPolynomials.lean",
+      "sha256": "90975dbcbba578a44c6ffc699ccd40b5115d219a09951bff3bbac77bff992e06",
+      "imports": [
+        "FewInflection.PolynomialJets"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/EigenblockBasis.lean",
+      "sha256": "90f6ed6b398889f7f34056a078a0f47bb96183b3204a92fa1586f0c221e98691",
+      "imports": [
+        "ModifiedCartan.EigenblockSum",
+        "Mathlib.LinearAlgebra.StdBasis"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/EigenblockSum.lean",
+      "sha256": "f6952005b1bd174f864d57ab903a3adcd18084f5c3c7bd4fefcffe8bf808398b",
+      "imports": [
+        "ModifiedCartan.SimpleEigenbasisCyclic",
+        "Mathlib.LinearAlgebra.Dimension.Constructions"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/EmbeddingMarkerAssignment.lean",
+      "sha256": "460fa08eb3bbbc6ca1ffae717b378ce41c1cabe351e592a92c0a2e9e37ef9372",
+      "imports": [
+        "ModifiedCartan.MarkerAssignmentDegree"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/EmbeddingProductTransport.lean",
+      "sha256": "8519f3aaa6019773d031b3e6e9c310495323ee9337dbaaf504967ef8582e72ba",
+      "imports": [
+        "ModifiedCartan.InjectiveColorSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/EvaluatedQuadraticResidue.lean",
+      "sha256": "775dc041b863761a38bbcb0f631f0e68fa0042a81f64f4738a27f1d64a67365b",
+      "imports": [
+        "ModifiedCartan.GeneralMarkerEvaluation",
+        "ModifiedCartan.SupportedQuadraticResidue",
+        "ModifiedCartan.SupportedPowerSumProduct"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ExtraColorEmbeddings.lean",
+      "sha256": "4f37342858eb6be56bc0dacd1635fdae51efeeac10f835ee406ca6368ffcefe1",
+      "imports": [
+        "Mathlib.Logic.Equiv.Option",
+        "Mathlib.Logic.Embedding.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ExtraColorEquiv.lean",
+      "sha256": "31068016068203735abac147c7205c1b98ab76b3a4f1c75a3d0de5b6d0b12c75",
+      "imports": [
+        "ModifiedCartan.ExtraColorEmbeddings",
+        "Mathlib.Tactic.Choose"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FactoredCompositionResidue.lean",
+      "sha256": "733d91b8b72f36721e080a03c963bdebfce0200444a3ce3e83eb4317d88d6b60",
+      "imports": [
+        "ModifiedCartan.BernsteinCompositionSeries",
+        "ModifiedCartan.BernsteinFactorResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FillingCoefficients.lean",
+      "sha256": "05d63bc6076e58fadc185eb5673a8788cf6d0564ac15037a9707b30ab4ac30bb",
+      "imports": [
+        "ModifiedCartan.FillingTabloids"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FillingPolytabloids.lean",
+      "sha256": "dfc5aca574ded3ea13189c68706967ffaf854fd784ef8467d533dc4f55dc6865",
+      "imports": [
+        "ModifiedCartan.YoungFillings",
+        "ModifiedCartan.SpechtRepresentation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FillingTabloids.lean",
+      "sha256": "3b15eaac14bfdfba0977b61babea7690347cb19beb804d3ab88a5009924f024c",
+      "imports": [
+        "ModifiedCartan.FillingPolytabloids",
+        "Mathlib.Order.Hom.Set"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteAlphabetShift.lean",
+      "sha256": "569bf8bea1f3bad98a48413016d0fe0741c10ff1d7a91f70ad98a9fc2eec5075",
+      "imports": [
+        "Mathlib.Algebra.MvPolynomial.Rename",
+        "Mathlib.Algebra.Polynomial.Laurent",
+        "Mathlib.Data.Complex.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteAlternants.lean",
+      "sha256": "767fd8c7b65adcf41da1543c350571529ca9a9d7822b5fe23904ae2ddddef227",
+      "imports": [
+        "ModifiedCartan.StaircaseWeights",
+        "Mathlib.LinearAlgebra.Matrix.Determinant.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteBernstein.lean",
+      "sha256": "32b23c07612c7b7b284294c111ae7acea06d4d1039932e7abbcf495c1ddfd618",
+      "imports": [
+        "ModifiedCartan.FiniteAlphabetShift",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteBernsteinCoefficients.lean",
+      "sha256": "b3bb8d531abc2d6bae5bd8753f04b87d527fe4d2cfcf63a822cfbc57503e42cc",
+      "imports": [
+        "ModifiedCartan.FiniteFinAlphabetShift",
+        "ModifiedCartan.LaurentPolynomialCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteBernsteinLaurent.lean",
+      "sha256": "0583cac8b7191b620bb5979b4aba390e3a74de6fa7b7cf7758d12eae2d85eea8",
+      "imports": [
+        "ModifiedCartan.LaurentVariableUnit",
+        "ModifiedCartan.FiniteBernstein"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteCauchyDeterminant.lean",
+      "sha256": "8c733c6bba1f568cbd48c3fe6ea17fb947b2aaa401847b442b0ba523638043d8",
+      "imports": [
+        "ModifiedCartan.FiniteCauchyPivot",
+        "Mathlib.LinearAlgebra.Vandermonde"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteCauchyPivot.lean",
+      "sha256": "6b08d57f58981ebc64cc811b3c449850c60e6b7399831cf6709d0344e9b8b13a",
+      "imports": [
+        "ModifiedCartan.DeterminantFirstPivot"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteCauchyRing.lean",
+      "sha256": "1a08e31018b29c5687e913cb92e230c53d47dd006d87c5e3309900843c5b92fa",
+      "imports": [
+        "ModifiedCartan.FiniteCauchyDeterminant",
+        "Mathlib.RingTheory.Localization.FractionRing"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteCauchySeries.lean",
+      "sha256": "920d8e7950b5a396fa40b290af139c901f22ab0431e65ef11fcaf4a27702f610",
+      "imports": [
+        "ModifiedCartan.FiniteGeometricSeries",
+        "ModifiedCartan.FiniteCauchyRing",
+        "Mathlib.RingTheory.MvPowerSeries.NoZeroDivisors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteColoringAverage.lean",
+      "sha256": "b00207d31b4498a2ffac8f388ef925f7c87e50e42b1e178670f331e3433e7b75",
+      "imports": [
+        "ModifiedCartan.WeightedColoringBurnside",
+        "ModifiedCartan.FiniteCyclePolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteCommonNeighborSums.lean",
+      "sha256": "817a69c0fd7fcb1047794826b3a751deb4a95a16f4afb442bc13d116eae6f0e1",
+      "imports": [
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteCompositionSums.lean",
+      "sha256": "84bc4c62f215e3ef8c756514ce9698aa9860f804d67068aef85274bb77f1bafd",
+      "imports": [
+        "ModifiedCartan.PositiveGeometricSum",
+        "Mathlib.Data.Fintype.Pi",
+        "Mathlib.Data.Fintype.EquivFin"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteCyclePolynomials.lean",
+      "sha256": "cc13386f17630600b8414e450eea7c1b017dcd79fc0b9c61843997e88b32a75d",
+      "imports": [
+        "ModifiedCartan.FixedColoringTransport",
+        "ModifiedCartan.FiniteAlphabetShift"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteFinAlphabetShift.lean",
+      "sha256": "a12dbe07c52ce9dac5fb2d8c29619bb69e607cd171662c431c520aa78ba25812",
+      "imports": [
+        "ModifiedCartan.DescendingVandermonde",
+        "ModifiedCartan.FiniteBernstein",
+        "Mathlib.Algebra.MvPolynomial.Equiv"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteFrobeniusCauchy.lean",
+      "sha256": "158fb166841e3b950be0dc9c7b9e7de61e8f4f6cf51fa913d9c80fe2f8e76094",
+      "imports": [
+        "ModifiedCartan.PolynomialFourierKernel",
+        "ModifiedCartan.FixedColoringInverse",
+        "ModifiedCartan.FiniteColoringAverage",
+        "ModifiedCartan.FiniteFrobeniusPolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteFrobeniusPolynomials.lean",
+      "sha256": "971b5d4cf632e2f3b27075aaf0f8f6612bcc29ed2305c47b8e67a5fb644a4920",
+      "imports": [
+        "ModifiedCartan.PolynomialSpechtFourier",
+        "ModifiedCartan.FiniteCyclePolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteFrobeniusSchur.lean",
+      "sha256": "d4669806c25f53a0c1a090f5622fca6c48b3aff800826463e35c052241e2bad0",
+      "imports": [
+        "ModifiedCartan.FittingFrobeniusOrthogonality"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteGeometricSeries.lean",
+      "sha256": "6d62d3af1531292f9b1f71c709812ca25e3adc87f322399932ee731ee4dce075",
+      "imports": [
+        "ModifiedCartan.SeparateVariableProducts",
+        "Mathlib.RingTheory.PowerSeries.WellKnown"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteGroupLinearCoefficients.lean",
+      "sha256": "3fa7571edcddc555d505cd6dc6c82ca866fa0ed908c1fab3b314f156c61f182e",
+      "imports": [
+        "Mathlib.Algebra.MonoidAlgebra.Basic",
+        "Mathlib.Algebra.MvPolynomial.Basic",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.Algebra.Algebra.Subalgebra.Basic",
+        "Mathlib.Data.Complex.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteInvolutionSum.lean",
+      "sha256": "c3f9b29800a0890f912ef408387ae72002d26858e4b2a9ff349497ebbf5a1753",
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Module",
+        "Mathlib.Data.Complex.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteJointSpectrumSeparation.lean",
+      "sha256": "1dda43a615fa6d5f17e5dbd9771c1284d10a9ea7b6803def9be664ad33bf31a3",
+      "imports": [
+        "ModifiedCartan.CyclicCentralizer",
+        "Mathlib.Algebra.Module.Submodule.Union",
+        "Mathlib.LinearAlgebra.StdBasis"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteKPJointEquation.lean",
+      "sha256": "eb52fd5b91c5b848b6b8d5b80d59b569bb6d77cb58d9c33b67b0794f8b583ef7",
+      "imports": [
+        "ModifiedCartan.JointEigenvectorDeterminants",
+        "ModifiedCartan.KPJointProfileClosed",
+        "ModifiedCartan.KPSpechtSupport",
+        "ModifiedCartan.SchubertCoordinatePolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteOrthogonalProjectors.lean",
+      "sha256": "f0cd12bff12aa1bb86c40be483da4076552ccf20367a9b66339ed178ae6270c5",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorRange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FinitePartitionDegrees.lean",
+      "sha256": "b714b7bdf74b816f07b0cb79f543bf580720ccddce3dff28d67126e3e2faef70",
+      "imports": [
+        "ModifiedCartan.YoungRowDegrees"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FinitePartitions.lean",
+      "sha256": "cf126d2fb667965f1a9ab9475cee92c307896b95126677b97b4993b1629445d3",
+      "imports": [
+        "ModifiedCartan.PartitionBoxes"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FinitePermutationCharacter.lean",
+      "sha256": "0312eca13d8e5450654d72939bc69e582e72c107575b5333a52c16102649049b",
+      "imports": [
+        "Mathlib.RepresentationTheory.Character",
+        "Mathlib.Data.Complex.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteRowMinimum.lean",
+      "sha256": "7bac0c35c94f82436bab130c30a181964b92ca8db51e8cff02dab7e5659e7055",
+      "imports": [
+        "ModifiedCartan.SortedMinorOrders",
+        "Mathlib.Data.Finset.Sort"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteSetExchange.lean",
+      "sha256": "b132bb379e2ad1741dc36c4dd30bc5dc0caa0a2ec17a3fe08388347c45efa20b",
+      "imports": [
+        "ModifiedCartan.FiniteRowMinimum"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteSubsetSwaps.lean",
+      "sha256": "cd5fa8584ab3f9385ed3df3e1dc0910d5e2413e733ad466f03bbbd268217508a",
+      "imports": [
+        "ModifiedCartan.SupportedPermutationImages"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FiniteSubtypeSupports.lean",
+      "sha256": "fc720a8f7da7fd76374f02167805b20a9153ea9c1195d5aa4f954d616dc825c3",
+      "imports": [
+        "ModifiedCartan.SupportedPermutationRestrictions",
+        "Mathlib.Data.Fintype.Powerset"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FinsetSwapEquiv.lean",
+      "sha256": "67ee0350d146ff9734bfb6c707baa91301fedf0a71928b8a16a00dd41b906045",
+      "imports": [
+        "ModifiedCartan.FiniteSubsetSwaps"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FittingFrobeniusOrthogonality.lean",
+      "sha256": "7d20c1952ef5f25cc07ebbda7d610f90115b79d3d0568fbf3f64567736ef8038",
+      "imports": [
+        "ModifiedCartan.FrobeniusAlternantOrthogonality",
+        "ModifiedCartan.FrobeniusHeightVanishing"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FixedColoringDirectSum.lean",
+      "sha256": "e9bc3142e03aa69289c99de685d929cdad6216a34fbeecfcd75339c388a3592c",
+      "imports": [
+        "ModifiedCartan.FixedColoringTransport",
+        "Mathlib.Data.Fintype.BigOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FixedColoringInverse.lean",
+      "sha256": "fb2f53df0d9f389605b9e9f475e324e685343aad5569d931c6505c99380eb5ed",
+      "imports": [
+        "ModifiedCartan.FixedColoringProduct",
+        "ModifiedCartan.FiniteCyclePolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FixedColoringProduct.lean",
+      "sha256": "4d572edd7447f324f7c6684f2b5f38d1c385fecb911280ae8e4899930cf30de4",
+      "imports": [
+        "ModifiedCartan.FixedColoringTransport"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FixedColoringTransport.lean",
+      "sha256": "f6e954f77b845ecbb2d908bfb17d7c52f9b9d3acec1502ffdf36483e1a24caf1",
+      "imports": [
+        "ModifiedCartan.CycleWeightedPowers",
+        "Mathlib.Logic.Equiv.Prod"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FixedPointDeletion.lean",
+      "sha256": "52a9388fb3fee929c0482f37203a8433777905580167ea7decdb16c995d0fec3",
+      "imports": [
+        "ModifiedCartan.RemovedPermutations"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FixedPointPermutationSums.lean",
+      "sha256": "ab2ab56c0f4f7a9892f9b406139394c5f34ddf285f174ace557f9b3e78291ce0",
+      "imports": [
+        "ModifiedCartan.FixedPointDeletion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FormalFrobeniusKernel.lean",
+      "sha256": "1c6a0e40b4dd8ff0d6376ce82d657c2644f0f369fd8f0cd6c39112ba8296222b",
+      "imports": [
+        "ModifiedCartan.SeparatedFrobeniusCauchy",
+        "ModifiedCartan.HomogeneousSeriesCoefficients",
+        "ModifiedCartan.AlternantHomogeneity"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FrobeniusAlphabetEquiv.lean",
+      "sha256": "4d1504828cbaf8d33bf86a89fe2403ead2d95e1a6179b651c6192bce4e730d91",
+      "imports": [
+        "ModifiedCartan.FiniteFrobeniusPolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FrobeniusAlternantOrthogonality.lean",
+      "sha256": "6b0222d28a5e50d2a31e1d1f009ec125112e0ac20b4ec56b5c77b1ebf896246c",
+      "imports": [
+        "ModifiedCartan.AlternantCauchyExpansion",
+        "ModifiedCartan.FrobeniusAlternantTriangularity",
+        "ModifiedCartan.WeightedOrthogonalTriangularity"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FrobeniusAlternantTriangularity.lean",
+      "sha256": "2265aec3b0057b2557c8013478690add94f7a6f526cbd87f18458d86a73522c6",
+      "imports": [
+        "ModifiedCartan.FiniteAlternants",
+        "ModifiedCartan.FrobeniusMinimalVanishing"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FrobeniusBernsteinCoefficients.lean",
+      "sha256": "e32bd68b0a607439f72279039b6a30a09b85a219e21e9b6f8a7612fb722fd080",
+      "imports": [
+        "ModifiedCartan.FiniteBernsteinCoefficients",
+        "ModifiedCartan.FiniteFrobeniusSchur",
+        "ModifiedCartan.FrobeniusAlphabetEquiv"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FrobeniusCoefficientMultiplicity.lean",
+      "sha256": "e88d76d19796dab21b8ab3a908a7412097451a2d61f92c0d5132e15d1f6e650c",
+      "imports": [
+        "ModifiedCartan.CyclePolynomialCoefficients",
+        "ModifiedCartan.FiniteFrobeniusPolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FrobeniusHeightVanishing.lean",
+      "sha256": "579d06f12876f56be9be467c29f69774d61000e653eac8357b422b01e12962d1",
+      "imports": [
+        "ModifiedCartan.YoungHeightCollision",
+        "ModifiedCartan.YoungColoringVanishing",
+        "ModifiedCartan.YoungFrobeniusCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FrobeniusMinimalVanishing.lean",
+      "sha256": "e7545a40a0d83abb7205d252e8df9093ccdd0f7e3e108ebdeee9f306ee743734",
+      "imports": [
+        "ModifiedCartan.YoungRowDegrees",
+        "ModifiedCartan.FrobeniusWeightVanishing"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FrobeniusWeightVanishing.lean",
+      "sha256": "94aa7c6649984b6fb1238ecf4b74f4cb7dafbb7073c74517a6c45ea7c2f0e8de",
+      "imports": [
+        "ModifiedCartan.YoungFrobeniusCoefficients",
+        "ModifiedCartan.YoungColoringVanishing"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/FundamentalOperator.lean",
+      "sha256": "cbc3429810217f5f0ad7512ebc5e81736847cd102c7d0da5dfdc8c4313a62ec8",
+      "imports": [
+        "ModifiedCartan.NormComparison",
+        "FewInflection.FundamentalAnalytic",
+        "FewInflection.CanonicalLocalGauge"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GarnirAlternation.lean",
+      "sha256": "f8928c819e5e4fc079aae0e7d23126e4ed4ec977b3752aa8df4956fea3cb6943",
+      "imports": [
+        "ModifiedCartan.GarnirBelt",
+        "ModifiedCartan.SubsetAlternatingCancellation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GarnirBelt.lean",
+      "sha256": "93f2f2171dddf10587d2af63d8a5f2c49071dc602e2d29f4364d8c8dbb3bc9b0",
+      "imports": [
+        "ModifiedCartan.YoungPermutationSubgroups"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GarnirMixing.lean",
+      "sha256": "0a989da8bb6fdc39edbea7d3b2019e054aff007426d1ecc2484d7afbd0118f99",
+      "imports": [
+        "ModifiedCartan.GarnirRelation",
+        "ModifiedCartan.GarnirSeparation",
+        "ModifiedCartan.FiniteSetExchange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GarnirRelation.lean",
+      "sha256": "e18bd0cba5bdd002ccd705d968eb7fc828539217c3e3ec8a18f000044da719d6",
+      "imports": [
+        "ModifiedCartan.GarnirAlternation",
+        "ModifiedCartan.FillingPolytabloids"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GarnirSeparation.lean",
+      "sha256": "2d2a8767cd1eb8ed6bfcc9a36bb0081192eb070e435106e0998adf89ba6d8bc8",
+      "imports": [
+        "ModifiedCartan.GarnirBelt",
+        "ModifiedCartan.YoungFillings",
+        "Mathlib.Order.Fin.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GaudinCyclicity.lean",
+      "sha256": "bc46fda632679b4ffcedbabeb937dec7ec8ea343714466d82e76998f4a0c8eef",
+      "imports": [
+        "ModifiedCartan.GaudinDegenerationElement",
+        "ModifiedCartan.JucysMurphyCyclicity"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GaudinDegenerationElement.lean",
+      "sha256": "dfc36e83ee5b86c3c2e43d346b3bbea72b2c9dfdbcf7ebaa1868411266740165",
+      "imports": [
+        "ModifiedCartan.GaudinDegenerationIdentity",
+        "ModifiedCartan.JucysMurphyElements",
+        "ModifiedCartan.MatrixCyclicOpen"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GaudinDegenerationIdentity.lean",
+      "sha256": "c9ae8bccf25b467d239a4b55dfbe1fca854fcf73bf7f043bf0a0576444848664",
+      "imports": [
+        "ModifiedCartan.GaudinDegenerationScalar"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GaudinDegenerationScalar.lean",
+      "sha256": "850e94ad24887f7e6a5aac009a1fa70831c499e2d528d6a6235a1f91670b1d93",
+      "imports": [
+        "ModifiedCartan.KPGaudinCommutation",
+        "Mathlib.Topology.Algebra.Polynomial"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GeneralMarkerEvaluation.lean",
+      "sha256": "a254aaf4d307ed081fe44eea24fd12530908a5127681f771ead75dd681c3a5e7",
+      "imports": [
+        "ModifiedCartan.SupportedMarkerEvaluation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GeometricProductCoefficients.lean",
+      "sha256": "6320624893a188c4b9c5e852be13bcd5ba9da448ef79433b17ffdaacf34fe764",
+      "imports": [
+        "ModifiedCartan.FiniteGeometricSeries",
+        "Mathlib.Data.Finsupp.Multiset",
+        "Mathlib.RingTheory.MvPolynomial.Symmetric.Defs"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GroupSubmoduleIntertwiners.lean",
+      "sha256": "e904293c26a1eaceda400d7ebaebc7dbd2fea841b8dda62b57929cdf5d1df535",
+      "imports": [
+        "ModifiedCartan.CharacterSimpleGeneration",
+        "Mathlib.RepresentationTheory.Irreducible"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/GrowthCountTableaux.lean",
+      "sha256": "79a5ca24e1ec1102abb46e8e13bc66637a1ed7f1f9be7e81822ea9e3e87db64e",
+      "imports": [
+        "ModifiedCartan.MinorGrowthCount",
+        "ModifiedCartan.SkewGrowthRows",
+        "ModifiedCartan.TableauCountRecurrence",
+        "ModifiedCartan.FinitePartitions"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/HomogeneousSeriesCoefficients.lean",
+      "sha256": "0468a43256dd0ace85ab3d4acf8b603e31414e91d2cdec6408dddd05d1c5e5bd",
+      "imports": [
+        "Mathlib.RingTheory.MvPowerSeries.Basic",
+        "Mathlib.RingTheory.MvPolynomial.Homogeneous"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/HomogenizedGeometricSeries.lean",
+      "sha256": "ca8d85331cf0171af3081d46e68d74a4eab61239d153f9ddecc64f1e6c7e454e",
+      "imports": [
+        "ModifiedCartan.SeriesHomogenization",
+        "ModifiedCartan.FiniteGeometricSeries"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/InducedSpechtClassFunction.lean",
+      "sha256": "85c0e587dbfde9faa89000f4ca2957d823835e5d65dada42e91585e123939a54",
+      "imports": [
+        "ModifiedCartan.FixedPointPermutationSums",
+        "ModifiedCartan.ClassWeightedOperator",
+        "ModifiedCartan.SpechtFiniteAlphabetBranching"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/InitialPolynomialJetBounds.lean",
+      "sha256": "ea92be71e6eb9a3f6b897f1caeccf6d68494725fafd61de7c382f3a8425c7c14",
+      "imports": [
+        "ModifiedCartan.ReplacedMinorOrders",
+        "ModifiedCartan.PolynomialJetDegreeProfile",
+        "ModifiedCartan.UniversalPolynomialMinors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/InjectiveColorSums.lean",
+      "sha256": "b7f9e9b7836f0f7bdb8cdec86a5a1c2c8ffef5f8eab7141422ffcdd193fda7c9",
+      "imports": [
+        "ModifiedCartan.ExtraColorEquiv",
+        "ModifiedCartan.FixedPointPermutationSums",
+        "Mathlib.Data.Fintype.Pi"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/InjectiveGeometricProducts.lean",
+      "sha256": "de516d10d6944fb856808b2677f32b1aef5b6bb36f230004f6980228cda42bae",
+      "imports": [
+        "ModifiedCartan.FiniteCompositionSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/InsertedTabloids.lean",
+      "sha256": "f021aa77fe755c8f683fd5207ac82d975488ee7d4a64a6fc01589e2f8809cbf6",
+      "imports": [
+        "ModifiedCartan.RemovedPermutations"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/IntertwinerAlgebraAction.lean",
+      "sha256": "1d7c823f9305eacaad5c1616573a16e0a0cd5d6705c2363d2cc579a517631235",
+      "imports": [
+        "ModifiedCartan.SubsetRepresentationOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/InvariantCycleSets.lean",
+      "sha256": "0fcde482280b4694cb4206f72a40a4811230deed76bc1900ebc3149581321ddb",
+      "imports": [
+        "ModifiedCartan.CycleColorings"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/InvariantCycleSubsets.lean",
+      "sha256": "7c6cc31179881060bcec919ffe2a58e66c153cdbe899976fe685107a0c03ac8b",
+      "imports": [
+        "ModifiedCartan.InvariantCycleSets",
+        "ModifiedCartan.CycleWeightedPowers"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/InvariantSupportedPermutations.lean",
+      "sha256": "6c43b17ae16e748647a98ec4ec9ac65b3820aac7bc418095261ab94ce3efa43f",
+      "imports": [
+        "ModifiedCartan.SupportedPermutations"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/IsotypicAnnihilator.lean",
+      "sha256": "10c3b38e8636346f1571fc72f06fc3fe6490cd925b7a48b9d3b3eccb0d53162d",
+      "imports": [
+        "ModifiedCartan.IntertwinerAlgebraAction",
+        "ModifiedCartan.SpechtProjectorCompleteness"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/IsotypicCopies.lean",
+      "sha256": "76a4adf767404f2c3c0c51cb2dbf2dc58616a32af7a2eaa6e22b9ca45c70a273",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorFixed"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/JointEigenbasisCyclic.lean",
+      "sha256": "6c2b38c36ac8d876f46374712e84624641026db912be5569be717f0f890f5eda",
+      "imports": [
+        "ModifiedCartan.SimpleEigenbasisCyclic",
+        "ModifiedCartan.FiniteJointSpectrumSeparation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/JointEigenvectorDeterminants.lean",
+      "sha256": "cc19934a96851caa921f2614badab236d53e6eeca27049f5bb4a4c93ae5e6f79",
+      "imports": [
+        "Mathlib.LinearAlgebra.Determinant",
+        "Mathlib.LinearAlgebra.Pi",
+        "Mathlib.Analysis.Complex.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/JucysMurphyBasisStep.lean",
+      "sha256": "9f83d2d5933e1b8753a39dea4d46544b24019f14d37fd7cd69be1a9a4c792a8b",
+      "imports": [
+        "ModifiedCartan.JucysMurphyRestriction",
+        "ModifiedCartan.LastLetterSpectrum"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/JucysMurphyBasisZero.lean",
+      "sha256": "82a77ef4e22e4bb2a5da964ca7430608fe27a456e439c988dd8d88bb98b172ec",
+      "imports": [
+        "ModifiedCartan.JucysMurphyBasisStep"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/JucysMurphyCyclicity.lean",
+      "sha256": "0135bd0bd20e0ff2cdfb1301f53de7b153fb174eb3099b28549850d953f24e7e",
+      "imports": [
+        "ModifiedCartan.JucysMurphyEigenbasis",
+        "ModifiedCartan.JointEigenbasisCyclic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/JucysMurphyEigenbasis.lean",
+      "sha256": "da9876844a5f640d61f80fc218b915b09dcc0201e248cdcf8ca6af38c7050dab",
+      "imports": [
+        "ModifiedCartan.JucysMurphyBasisZero"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/JucysMurphyElements.lean",
+      "sha256": "2cc3066d3868699d037a6f386788ed7dcdf1ec8566260523c448e9225141cd55",
+      "imports": [
+        "ModifiedCartan.SubsetRepresentationOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/JucysMurphyRestriction.lean",
+      "sha256": "ce75a17d8e5f315dc5ac25b5b61d589dfad5e4b25a05f4f20fb50d5dd4ac9554",
+      "imports": [
+        "ModifiedCartan.JucysMurphyElements",
+        "ModifiedCartan.IntertwinerAlgebraAction",
+        "ModifiedCartan.SpechtCornerDirectSum"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAdjugateMinorCharacters.lean",
+      "sha256": "3c3ceba85ec66d61ff113ccba27f2a3c57e40dccdf763b12794355949c4b6684",
+      "imports": [
+        "ModifiedCartan.KPParameterAdjugateReconstruction",
+        "ModifiedCartan.KPJointInitialBasis"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAlphaBoundedFrobenius.lean",
+      "sha256": "5288ceb762c50179eab48ae0cd08c6e7497aec24e8e8cef3e09985e7f9b1ffa4",
+      "imports": [
+        "ModifiedCartan.KPAlphaFrobeniusCoefficients",
+        "ModifiedCartan.SizedPartitionsInSquare"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAlphaCoefficients.lean",
+      "sha256": "64ea451a7bda6f49f8cdeaa2bf678b5f3f53e482730164d9bd035c07efdad99d",
+      "imports": [
+        "ModifiedCartan.KPOperators",
+        "ModifiedCartan.FixedPointDeletion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAlphaConjugation.lean",
+      "sha256": "cb55e297a268cbe289976f9c31f81c77a07c23c62c22a4d32d1cbefe6608b1cf",
+      "imports": [
+        "ModifiedCartan.KPOperators",
+        "ModifiedCartan.SupportedPermutationImages"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAlphaEraseCommutator.lean",
+      "sha256": "3ee2a37ca23a9f905d225751bce5d1bbabaa57fa6542ae89f339ad6294036765",
+      "imports": [
+        "ModifiedCartan.PermutationStar"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAlphaExpectation.lean",
+      "sha256": "5cd11ee17223a1fd6460ee0206a95f6d4b425e2493013b0282919f087808ddda",
+      "imports": [
+        "ModifiedCartan.KPAlphaPositive",
+        "ModifiedCartan.CharacterProjectionBound"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAlphaFrobeniusCoefficients.lean",
+      "sha256": "637f3e3220dacdd63fac4eb1d2ebd72d4677333ef79277c900aeca6deff3ea14",
+      "imports": [
+        "ModifiedCartan.SubgroupFiniteSumCoefficient",
+        "ModifiedCartan.SupportedRestrictionEquivalence",
+        "ModifiedCartan.FiniteFrobeniusPolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAlphaFullInduction.lean",
+      "sha256": "41171819f2e608aaac408399b0e17691c66ed76d7d29eaf12829a0295c391b55",
+      "imports": [
+        "ModifiedCartan.KPAlphaCoefficients",
+        "ModifiedCartan.SpechtInductionCharacter"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPAlphaPositive.lean",
+      "sha256": "9270abc202d0c490e8967256e1019005f42fcc967bbddc1fb8759dab71898dda",
+      "imports": [
+        "ModifiedCartan.KPFullCharacterAction",
+        "ModifiedCartan.CharacterPositive",
+        "ModifiedCartan.SubsetRepresentationOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPBetaCommutation.lean",
+      "sha256": "ca06ff7ffe0b9b98f53e090cb08a4b51a0e17bceac1f2937e510293f35537a0f",
+      "imports": [
+        "ModifiedCartan.SpechtKPCommutation",
+        "ModifiedCartan.SpechtAlgebraFaithful"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPBetaDeformedCommutation.lean",
+      "sha256": "8c5c528691457f6179e7453ace8c75ea18410b33ad654a6004b2a61908ae15c2",
+      "imports": [
+        "ModifiedCartan.GaudinCyclicity"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPBetaFrobeniusIdentification.lean",
+      "sha256": "5bc3897b71b3055cd73a06afd0375ab3f7fca9698efc431549c695e5ad8fa55d",
+      "imports": [
+        "ModifiedCartan.SupportedPowerSumEvaluation",
+        "ModifiedCartan.KPAlphaBoundedFrobenius",
+        "ModifiedCartan.KPSubsetWeights"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPBetaFullSize.lean",
+      "sha256": "06b43eedb48067a27cb11cd9b10313d0266d001dfeabd10f327543d23a65fa74",
+      "imports": [
+        "ModifiedCartan.KPFullCharacterAction",
+        "ModifiedCartan.KPSubsetWeights"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCoefficientDegree.lean",
+      "sha256": "a337dd87f998a68d8b637b4b41410a32ee4f37d795ec99225bca65250dc96658",
+      "imports": [
+        "ModifiedCartan.KPPolynomialCoefficients",
+        "Mathlib.Algebra.Polynomial.BigOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCoefficientDerivative.lean",
+      "sha256": "02f238c3621325522fafbe14c3507d979f7062857bfa3c6aeaf9425c31c3e701",
+      "imports": [
+        "ModifiedCartan.KPPolynomialCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCoefficientGrowthPaths.lean",
+      "sha256": "cd93c7ee78a4e923a0793f39d65f10180fafcb349da61a6adc960321c2271658",
+      "imports": [
+        "ModifiedCartan.KPCoefficientDerivative",
+        "ModifiedCartan.LegalMinorRowCovers"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCoefficientTableaux.lean",
+      "sha256": "28fb6cca15749f8c3e59d58e1333bd174cdf3e1d3511e237424b64fff794a4a8",
+      "imports": [
+        "ModifiedCartan.KPCoefficientGrowthPaths",
+        "ModifiedCartan.BoundedPartitionSquare",
+        "ModifiedCartan.MinorDerivativeSubpartitions"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCoefficientTranslation.lean",
+      "sha256": "860fe0b0ca11618e7fb5ac16ccf4024c425809b931bf73dcf53deca3eceade4c",
+      "imports": [
+        "ModifiedCartan.KPCoefficientTableaux",
+        "ModifiedCartan.KPCoefficientDegree",
+        "ModifiedCartan.MinorTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPColumnLaurentExpansion.lean",
+      "sha256": "cbd87a46ed8485fd7ac6621601e5986482e6c674026ba0333ee25e902e9a051e",
+      "imports": [
+        "ModifiedCartan.KPColumnLaurentIdentification"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPColumnLaurentIdentification.lean",
+      "sha256": "0ac435824b5f4023af7359cf19202a7d1bc902f5a0b14c12bbdf0c151a1d7ae1",
+      "imports": [
+        "ModifiedCartan.KPColumnSupportedExpansion",
+        "ModifiedCartan.LaurentColumnCoefficient"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPColumnSupportedExpansion.lean",
+      "sha256": "cc0e8eb592c5ba3368359834d2b66f15e7065166c73f23bafaf6cfa1f0b1b966",
+      "imports": [
+        "ModifiedCartan.ColumnPartitions",
+        "ModifiedCartan.KPSubsetWeights",
+        "ModifiedCartan.ZFactorizationParameters",
+        "ModifiedCartan.RemovalSigns"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCorrespondence.lean",
+      "sha256": "4e77462316218dae1a4718f145daba2274df99d4e7f05879f9297da1093c19b0",
+      "imports": [
+        "ModifiedCartan.BetheAlgebraIdentification",
+        "ModifiedCartan.KPCorrespondenceEigenspaces"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCorrespondenceEigenspaces.lean",
+      "sha256": "012bc831f74d360b949da1f5799b5106af63b6e59287e3b41374a6a8134f9917",
+      "imports": [
+        "ModifiedCartan.CommonEigenspaceAlgebra",
+        "ModifiedCartan.KPInverseCorrespondence"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCurveMatrix.lean",
+      "sha256": "a8feccafd44d62c9404fd5c1327a1a97d4ef6fb30c6a4eeed2391d053fde1d70",
+      "imports": [
+        "ModifiedCartan.KPCurvePolynomial",
+        "ModifiedCartan.MatrixCyclic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPCurvePolynomial.lean",
+      "sha256": "7853e851fd5d05375314a29130d3cf810cef023da4e63d50a5b92ec264d45c72",
+      "imports": [
+        "ModifiedCartan.GaudinDegenerationIdentity"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPDividedPolynomialTranslation.lean",
+      "sha256": "2701892246355440a518cb791d852c6c53d6d7fb369b5258d36a3cbe15c0f251",
+      "imports": [
+        "ModifiedCartan.DividedAlternantTranslation",
+        "ModifiedCartan.KPJointDividedContraction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPEquationPolynomials.lean",
+      "sha256": "656102b4bb66dd30283959b1d924ae0ec5bc4e7f87a7ccceb9afee835c637182",
+      "imports": [
+        "ModifiedCartan.FiniteKPJointEquation",
+        "ModifiedCartan.StandardPolytabloidBasis"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPExpectationExpansion.lean",
+      "sha256": "d5f644aca92ae8901494630600807bc3df046064592d5b580d3fd30af362f698",
+      "imports": [
+        "ModifiedCartan.KPAlphaExpectation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPForwardCorrespondence.lean",
+      "sha256": "1fb9d2ed32dfc496ac3fbcaf934658cd992511230a23d14155760001ed058a2d",
+      "imports": [
+        "ModifiedCartan.KPJointWronskiFibre",
+        "ModifiedCartan.SchubertDimensionTransfer"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPFrobeniusBernsteinResidue.lean",
+      "sha256": "12d10a7de3c2d2297f8100e3645595e2b51b386313b85e103d985c927efa8dce",
+      "imports": [
+        "ModifiedCartan.KPQuadraticFrobeniusExpansion",
+        "ModifiedCartan.FrobeniusBernsteinCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPFullCharacterAction.lean",
+      "sha256": "7f385d97df46ac0a0ab7949d629df57a87238c2955e8ab25e000e9c9120effa4",
+      "imports": [
+        "ModifiedCartan.KPAlphaFullInduction",
+        "ModifiedCartan.SpechtDistinctCharacters",
+        "ModifiedCartan.SymmetricCharacterProjection"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPGaudinCommutation.lean",
+      "sha256": "ae5ff085941788363a66dcccb026e7930835660c8e427db67abbeb72ac89efb7",
+      "imports": [
+        "ModifiedCartan.KPGaudinReduction",
+        "ModifiedCartan.AllSubsetInsertion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPGaudinReduction.lean",
+      "sha256": "095313c6700009013e00e88bb80f93df7b88a638dd76a26ba3cefcdd734ba376",
+      "imports": [
+        "ModifiedCartan.KPTranspositionCommutator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPGeneratedCommutative.lean",
+      "sha256": "edef5d21ebd47df3e2071aa39c9ed8ecc5c08305d8d3a033e167e9b2bb508a7a",
+      "imports": [
+        "ModifiedCartan.KPBetaCommutation",
+        "ModifiedCartan.KPTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPGeneratedShift.lean",
+      "sha256": "0103402b8b421e68289c255dc4c43c1360ba5fa6e0875347fbc424803faf284e",
+      "imports": [
+        "ModifiedCartan.KPTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPInverseCorrespondence.lean",
+      "sha256": "f108797bf8a05c6ababcee974bd39470de576eac48767e9c890de1e1e6958eab",
+      "imports": [
+        "ModifiedCartan.KPPolynomialEquationTransfer",
+        "ModifiedCartan.KPEquationPolynomials"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointAlternantContraction.lean",
+      "sha256": "84200fb94caaeb9087b71350d602d98f7e823335b44fd6f82b7b2ba68f710d83",
+      "imports": [
+        "ModifiedCartan.KPJointBernsteinResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointBernsteinResidue.lean",
+      "sha256": "351d26a9dd78f606fb670cb2fc7248975ec85184a6ba4ce4e2077b38e55a5d13",
+      "imports": [
+        "ModifiedCartan.KPJointLinearValue",
+        "ModifiedCartan.KPFrobeniusBernsteinResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointCharacter.lean",
+      "sha256": "b4000c723dcfcba9cacb5a3fcd5e9bd6abc4d04bc7f84b1bc47adb2350670c3d",
+      "imports": [
+        "ModifiedCartan.ScalarActionCharacter",
+        "ModifiedCartan.KPJointEigenvalues"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointCoefficientDimension.lean",
+      "sha256": "9850190e45ed2c7275478e5e0de17bdf11c04d90e66272f69496495afacdb720",
+      "imports": [
+        "ModifiedCartan.PartitionAlternatingDualForm",
+        "ModifiedCartan.AlternatingDualDescent",
+        "ModifiedCartan.KPJointCoefficientSpace"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointCoefficientSpace.lean",
+      "sha256": "ceed178759b122b525ccf6b89a71ec504969564f1421379cf8159148c4833eef",
+      "imports": [
+        "ModifiedCartan.PolynomialCoefficientSpace"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointDecomposability.lean",
+      "sha256": "4b2362f7b74f7de6f03cfc70c71de23ac4a5b03e147351465876a9c75b8c63b4",
+      "imports": [
+        "ModifiedCartan.KPJointCoefficientDimension",
+        "ModifiedCartan.AlternatingDualDeterminant"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointDividedContraction.lean",
+      "sha256": "a129f61e9773694483d6cce87b740b0089b69a966500c502a3bbcf86a8ffd977",
+      "imports": [
+        "ModifiedCartan.PartitionAlternatingPolynomial",
+        "ModifiedCartan.MvDividedPowerNormalization"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointEigenspace.lean",
+      "sha256": "bbf27f274daf70a047a3fabe06c3d0ed016f9496fd5221127f51535d2856b5c1",
+      "imports": [
+        "ModifiedCartan.KPBetaCommutation",
+        "ModifiedCartan.CommonEigenvectors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointEigenvalues.lean",
+      "sha256": "c0bb8cea1064606a8cafdba0eb6b74ca5aaa02774b0d617d7445aec9239bbc8f",
+      "imports": [
+        "ModifiedCartan.KPJointEigenspace",
+        "ModifiedCartan.KPSpechtSupport",
+        "ModifiedCartan.ScalarActionAdjoin"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointInitialBasis.lean",
+      "sha256": "c2a112ff5a7d9209603511b8c25ea213b7331ee0dabb414bb8d74aef95a1d520",
+      "imports": [
+        "ModifiedCartan.SchubertDegreeInitialCoefficients",
+        "ModifiedCartan.KPCorrespondenceEigenspaces",
+        "ModifiedCartan.PolynomialInitialBasisExistence"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointLinearValue.lean",
+      "sha256": "256702c33866469a8f6c8487820299f3b8ce4a5bd9d1b3584090c95662636797",
+      "imports": [
+        "ModifiedCartan.FiniteGroupLinearCoefficients",
+        "ModifiedCartan.KPJointCharacter"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointPolynomialTuple.lean",
+      "sha256": "f64f2460f5548fc65a33241f4fdc82a98dddfaa033cfafc9ccfd3c23603015b4",
+      "imports": [
+        "ModifiedCartan.KPJointDecomposability",
+        "ModifiedCartan.PolynomialAlternantMinors",
+        "ModifiedCartan.KPJointValueNormalization",
+        "ModifiedCartan.NormalizedMinorTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointProfileClosed.lean",
+      "sha256": "8fbff1b15eeae94ebd270f2a28998c6030388798470347fb3f84bd45c35e189d",
+      "imports": [
+        "ModifiedCartan.ClosedJointEigenprofiles",
+        "ModifiedCartan.KPRealJointDecomposition"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointSchubertSpace.lean",
+      "sha256": "1320026d7f1ac7cafd50fcd5a6bb5a49f3b65407cd2ff1f29385d9ad45ae2dc4",
+      "imports": [
+        "ModifiedCartan.KPJointPolynomialTuple",
+        "ModifiedCartan.SchubertFrameReconstruction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointShiftedContraction.lean",
+      "sha256": "81e4d70c6b2ef7b597289bff3d320987054305153531f90f89357fa22a48f722",
+      "imports": [
+        "ModifiedCartan.KPDividedPolynomialTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointValueNormalization.lean",
+      "sha256": "1e125146ae7634df2f4b900ccccd61ba87608517d47145a41953b7be3a0ea13f",
+      "imports": [
+        "ModifiedCartan.KPJointWronskian"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointWronskiFibre.lean",
+      "sha256": "ec4f3b3ba2344ddb7d7a4b664f64275a86f0408e70106b140496201a62005e7c",
+      "imports": [
+        "ModifiedCartan.KPJointSchubertSpace",
+        "ModifiedCartan.SchubertMonicWronskian"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPJointWronskian.lean",
+      "sha256": "4fb7ad5e40fb14f2854ef4a639b3d5588ae5a649f5e52d63a807c3b7c3fef975",
+      "imports": [
+        "ModifiedCartan.KPJointEigenvalues"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPOperators.lean",
+      "sha256": "af8fc23cb97bc0b171c60cd6b443ff97fd6259d7b612c06a6214cddcf777d6e7",
+      "imports": [
+        "ModifiedCartan.SpechtCharacterLabels",
+        "ModifiedCartan.StandardPolytabloidBasis",
+        "ModifiedCartan.SchubertWronskianDegree",
+        "ModifiedCartan.SupportedPermutations",
+        "Mathlib.Algebra.Algebra.Subalgebra.Lattice"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPParameterAdjugateReconstruction.lean",
+      "sha256": "977be009e08227acf583116b6c6ecbcb3e7e82b43d6e7998233212552854aa72",
+      "imports": [
+        "ModifiedCartan.KPParameterCharacters",
+        "ModifiedCartan.SchubertAdjugateReconstruction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPParameterBetheAlgebra.lean",
+      "sha256": "9015e01bd207c19df008b6598a5a348e24809739a6fec03a8ac9a278c8f9996d",
+      "imports": [
+        "ModifiedCartan.KPPolynomialParameters",
+        "ModifiedCartan.BetheAlgebra"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPParameterCharacters.lean",
+      "sha256": "71e274121f2cd068b0c49242166a9dd9f07b367d00e3e4e002781e76bbcdd806",
+      "imports": [
+        "ModifiedCartan.KPParameterDifferentialCoefficients",
+        "ModifiedCartan.KPJointCharacter"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPParameterDifferentialCoefficients.lean",
+      "sha256": "17d289e594b31baa369be963b0f7bab952cc8f2f407c384ac3db28c4e1d2bcf9",
+      "imports": [
+        "ModifiedCartan.KPPolynomialCoefficientAction",
+        "ModifiedCartan.KPParameterBetheAlgebra",
+        "ModifiedCartan.KPJointCoefficientSpace",
+        "Mathlib.Algebra.Polynomial.OfFn"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPParameterPermutation.lean",
+      "sha256": "f103582420127349620840bffdd6755d292663088059102a4ee80f26c3c516aa",
+      "imports": [
+        "ModifiedCartan.KPJointProfileClosed",
+        "ModifiedCartan.PermutationStar"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPPolynomialCoefficientAction.lean",
+      "sha256": "f4ab9aa98af2785f5dd1efd854c6a6c4cbe04b9880dc8f0b01aec7b771612354",
+      "imports": [
+        "ModifiedCartan.PolynomialValueSpan",
+        "ModifiedCartan.BetheAlgebra",
+        "ModifiedCartan.KPJointWronskian"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPPolynomialCoefficients.lean",
+      "sha256": "e0c803a84010471967235d8d95fa269433022be69523cefc9acf16dbd6998077",
+      "imports": [
+        "ModifiedCartan.SizedSubsetInsertion",
+        "ModifiedCartan.KPSubsetInduction",
+        "Mathlib.Algebra.Polynomial.Derivative"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPPolynomialEquationTransfer.lean",
+      "sha256": "01e41fbcdb122fec65ee05a1cb6893c7636aeda9dea684322a355ee19e20f98a",
+      "imports": [
+        "ModifiedCartan.KPSymmetricEquationTransfer",
+        "ModifiedCartan.KPParameterPermutation",
+        "ModifiedCartan.SymmetricOrbitPolynomial"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPPolynomialParameters.lean",
+      "sha256": "cd8aa976337b2117b77c468d5cbcf112bf2bc2d1f221fcfc60a2e0343d056362",
+      "imports": [
+        "ModifiedCartan.KPBetaCommutation",
+        "Mathlib.Algebra.MvPolynomial.Funext"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPQuadraticFrobeniusExpansion.lean",
+      "sha256": "b5ecd1324e51e5dfbe7136f6118972a5945288a60aeb00776d7406941ee2adb2",
+      "imports": [
+        "ModifiedCartan.KPColumnLaurentExpansion",
+        "ModifiedCartan.KPBetaFrobeniusIdentification",
+        "ModifiedCartan.EvaluatedQuadraticResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPRealJointActionExt.lean",
+      "sha256": "535e2a86ea3eb2e5be2e64d8c8fec5a2d803e491983e587a7c38fa5b3c0612b0",
+      "imports": [
+        "ModifiedCartan.KPRealJointDecomposition",
+        "ModifiedCartan.SpechtAlgebraFaithful"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPRealJointDecomposition.lean",
+      "sha256": "21cbadf7f58a8e6d25e35a60005acf958e99c7cc0c5ad5efd3c45f00875bd5c8",
+      "imports": [
+        "ModifiedCartan.KPRealSymmetric",
+        "ModifiedCartan.KPJointEigenspace",
+        "Mathlib.Analysis.InnerProductSpace.JointEigenspace"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPRealSymmetric.lean",
+      "sha256": "3a8729e58be7ff9ea5045642c5f7cb8fb3d7c4d95d78d1813db5a508aeabe726",
+      "imports": [
+        "ModifiedCartan.KPAlphaPositive",
+        "ModifiedCartan.KPSubsetWeights"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPSchubertConstantVector.lean",
+      "sha256": "1f5dd73ed9b6435d79f17fd29a69e6da747f3dfbbdbfb436e166d8fadb9a4956",
+      "imports": [
+        "ModifiedCartan.KPSchubertUnitVector"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPSchubertUnitVector.lean",
+      "sha256": "f4546ec20a11d7826bf35d164bdc70bf56ff39aeb43fb7064fac345df1133753",
+      "imports": [
+        "ModifiedCartan.KPCorrespondenceEigenspaces",
+        "ModifiedCartan.KPJointWronskian"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPSpechtSupport.lean",
+      "sha256": "2dd416dfbfb8816fb8f0c2fe2f5845d858a27e7833812836725374f87ba7a2bb",
+      "imports": [
+        "ModifiedCartan.KPTranslatedVanishing",
+        "ModifiedCartan.KPAlphaPositive"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPSubsetInduction.lean",
+      "sha256": "4987788e17122e726836f61a5d5c64bc06a51327aebb31e7dffb8324ceb35b45",
+      "imports": [
+        "ModifiedCartan.KPAlphaFullInduction",
+        "ModifiedCartan.NestedPermutationErasure"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPSubsetWeights.lean",
+      "sha256": "d7cda5aed5d44b30dc4d9685f9844527e61d52382db7828bf31690a468d0fbce",
+      "imports": [
+        "ModifiedCartan.FiniteSubsetSwaps",
+        "ModifiedCartan.SizedSubsetInsertion",
+        "ModifiedCartan.FixedPointPermutationSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPSymmetricEquationTransfer.lean",
+      "sha256": "d365042734050739807b2fb33e9b2ca4a70ba273ee563fe57e72188ea13bb310",
+      "imports": [
+        "ModifiedCartan.SymmetricPolynomialSpecialization",
+        "ModifiedCartan.KPWronskiMapDominance"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPTranslatedVanishing.lean",
+      "sha256": "90addcc312458200cc10550be810eefc60dfb1153382ca4c315b85cca0303ae4",
+      "imports": [
+        "ModifiedCartan.KPBetaFullSize",
+        "ModifiedCartan.KPTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPTranslation.lean",
+      "sha256": "b9a1834c77594ba3fc5492ff066644b27c712f98b38eb210169a9ae6e0cdb935",
+      "imports": [
+        "ModifiedCartan.KPCoefficientTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPTranspositionCommutator.lean",
+      "sha256": "eeb91c7f2093ae066a3e1aa9f6ef1391002359623562fd22b6594e206bf8dcb8",
+      "imports": [
+        "ModifiedCartan.KPAlphaEraseCommutator",
+        "ModifiedCartan.KPSubsetWeights",
+        "ModifiedCartan.FiniteInvolutionSum",
+        "ModifiedCartan.FinsetSwapEquiv"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPUniversalAdjugateIdentity.lean",
+      "sha256": "5925fdd3b7097bdd4e5b676f523872d65c5877c985371c352256ca1b2766bb70",
+      "imports": [
+        "ModifiedCartan.KPAdjugateMinorCharacters",
+        "ModifiedCartan.KPRealJointActionExt"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/KPWronskiMapDominance.lean",
+      "sha256": "00c4a93646cd60545db833d58bb451110ff90e19eeb8badbfa350fc751526010",
+      "imports": [
+        "ModifiedCartan.SchubertCoordinatePolynomials",
+        "ModifiedCartan.MonicPolynomialParameters",
+        "ModifiedCartan.SchubertChartSurjectivity",
+        "ModifiedCartan.KPForwardCorrespondence",
+        "ModifiedCartan.PolynomialMapDensity"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LastLetterSpectrum.lean",
+      "sha256": "e574d43f75c9f7d11615910ccb27b4fd5c012c154da80f70a6a26c0f922476fa",
+      "imports": [
+        "ModifiedCartan.FixedPointDeletion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LastRowSupport.lean",
+      "sha256": "badbbbfddec50d288491579aff0ef577e8321fc7988302f68f5cf64415e55cde",
+      "imports": [
+        "ModifiedCartan.TableauLastBox",
+        "ModifiedCartan.FillingCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LaurentChangeVariableResidue.lean",
+      "sha256": "01751e820909a0667be3895e451a9f3df7f826864aa59e4f54ba8c3256e87e39",
+      "imports": [
+        "ModifiedCartan.LaurentDerivation",
+        "Mathlib.Algebra.CharZero.Defs"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LaurentColumnCoefficient.lean",
+      "sha256": "5067342938ea9f7bf8e9f9ff9d54ae1f005acae3e74d939ea6ee10e10b8e4e1a",
+      "imports": [
+        "ModifiedCartan.SupportedMarkerEvaluation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LaurentCompositionExpansion.lean",
+      "sha256": "386678299ff59564b8b9db777a69c5bf130f5ff12d1f871624b95829900c833c",
+      "imports": [
+        "ModifiedCartan.NormalizedGeometricLaurent",
+        "Mathlib.Data.Fintype.Pi"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LaurentDerivation.lean",
+      "sha256": "1be621a98d1d90c19b872d4e26e50c05b343bf0a38b19775f8f7f90f4dc66615",
+      "imports": [
+        "ModifiedCartan.LaurentDerivative",
+        "Mathlib.RingTheory.Derivation.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LaurentDerivative.lean",
+      "sha256": "f7dfd7dea07328838fa6709e79547c9f8403be1a219442c8e656db12732d6662",
+      "imports": [
+        "Mathlib.Algebra.Polynomial.Laurent",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LaurentMarkerEquiv.lean",
+      "sha256": "548a68f53ff189e5222ecbec66968094c56f6849dbe4b227e38afc43f6fd975b",
+      "imports": [
+        "ModifiedCartan.MonoidAlgebraCoefficientSwap",
+        "Mathlib.Algebra.Polynomial.Laurent",
+        "Mathlib.Algebra.MvPolynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LaurentPolynomialCoefficients.lean",
+      "sha256": "50b1b170423570d8656a355be645997dac6b93708f6e4860faef653b26c3ea5a",
+      "imports": [
+        "Mathlib.Algebra.Polynomial.Laurent"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LaurentVariableUnit.lean",
+      "sha256": "4772d07ba576a797c7ebd1f48afcfa6720d9c99204651d1a2dd5431feb260a08",
+      "imports": [
+        "Mathlib.Algebra.Polynomial.Laurent"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LeadingCoefficientIndependence.lean",
+      "sha256": "5956cc6a3ecef76c78d091c543a80cb4e238240b1c719c9ca95df4d6a1a2987f",
+      "imports": [
+        "ModifiedCartan.YoungPolytabloid",
+        "Mathlib.LinearAlgebra.LinearIndependent.Lemmas"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/LegalMinorRowCovers.lean",
+      "sha256": "5f99632a8b2438777764e3e52cf0d2e4698896e32dce65c34c2cef3467209c6e",
+      "imports": [
+        "ModifiedCartan.MinorGrowthPaths",
+        "ModifiedCartan.PartitionCoverAddition",
+        "ModifiedCartan.SizedYoungDiagrams"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MarkerAffineExpansion.lean",
+      "sha256": "4266a5421d3d58f92ee954a3d5eca098115ec4a749e0c24346bba3060d92a5f2",
+      "imports": [
+        "ModifiedCartan.MarkerAssignmentDegree",
+        "Mathlib.Algebra.MvPolynomial.Eval",
+        "Mathlib.Algebra.BigOperators.Fin"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MarkerAssignmentDegree.lean",
+      "sha256": "047483e977cb194fb7635f08d370a2b88404544f0d9d26fc385950854d553c65",
+      "imports": [
+        "Mathlib.Algebra.MvPolynomial.Basic",
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Data.Finsupp.Indicator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MarkerAssignmentEquiv.lean",
+      "sha256": "338211af2df35135e32422af4844b2bf7190c7c2a89bb46e6152d0452ad5512f",
+      "imports": [
+        "ModifiedCartan.EmbeddingMarkerAssignment"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MarkerEmbeddingCoefficients.lean",
+      "sha256": "2119485c0aeff3dbecf0db1081cd16a80be138f8f13947670a462804a5045fcc",
+      "imports": [
+        "ModifiedCartan.MarkerAssignmentEquiv",
+        "ModifiedCartan.MarkerAffineExpansion",
+        "ModifiedCartan.InjectiveGeometricProducts",
+        "ModifiedCartan.FixedPointPermutationSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MarkerSquarefreeJacobian.lean",
+      "sha256": "9f8ed11a4dcc75f143fe32305216746ab0438d1f58196429d5d5703b7a0de326",
+      "imports": [
+        "ModifiedCartan.MarkerEmbeddingCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MatrixCyclic.lean",
+      "sha256": "1ddb7c05314a689b665995c6456c12fe749ca4bda2e249f3c8846369de530627",
+      "imports": [
+        "ModifiedCartan.CyclicCentralizer",
+        "Mathlib.LinearAlgebra.Matrix.ToLin",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MatrixCyclicOpen.lean",
+      "sha256": "39eb8789f19738c72a8c8a9dabd0541f67f22dcffd0cf743f0a677a728341f66",
+      "imports": [
+        "ModifiedCartan.MatrixCyclic",
+        "Mathlib.Topology.Instances.Matrix",
+        "Mathlib.Topology.Algebra.Polynomial"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MinorDerivativeSubpartitions.lean",
+      "sha256": "76d8ecaf870f020f7587ba8646a4ece8eef97e69217a15c52761785077530c34",
+      "imports": [
+        "ModifiedCartan.MinorDerivativeTableaux",
+        "ModifiedCartan.PartitionMinorSupport"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MinorDerivativeTableaux.lean",
+      "sha256": "74a6315ad51adeb144aa823d95bd5ffd0630247cc0843437db4b2b46bfeac72f",
+      "imports": [
+        "ModifiedCartan.GrowthCountTableaux"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MinorDimensionStep.lean",
+      "sha256": "4c716365c1d63b6955fcb652266735f0b45fb2b7039250afc9a109ebaa0878c1",
+      "imports": [
+        "ModifiedCartan.NormalizedMinorTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MinorGrowthCount.lean",
+      "sha256": "b99fb31b39b53fbcfa17f76322c0e314bba97d3716bcfa4f01dd1a9178b84a1b",
+      "imports": [
+        "ModifiedCartan.MinorGrowthPaths"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MinorGrowthPaths.lean",
+      "sha256": "b9f68e538f625b041dc6bf56cd0f44cc4e71583cebf86e1b1ed68ae6ed84f02b",
+      "imports": [
+        "ModifiedCartan.PartitionMinorDerivative"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MinorTranslation.lean",
+      "sha256": "9f76658fb01359881842151043a71abe654a596298a1e73f20131a527b57647f",
+      "imports": [
+        "ModifiedCartan.MinorDerivativeSubpartitions",
+        "ModifiedCartan.PartitionMinorDegree"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MonicPolynomialParameters.lean",
+      "sha256": "cd312a131329ee0886effa39605cffd4edf620ed3f23166cb4eff786b205c986",
+      "imports": [
+        "ModifiedCartan.SchubertMonicWronskian",
+        "Mathlib.FieldTheory.IsAlgClosed.Basic",
+        "Mathlib.Analysis.Complex.Polynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MonoidAlgebraCoefficientSwap.lean",
+      "sha256": "d0c8156da81e431af491bc57451c3856bae090ad302de83b86814f68ef8f3069",
+      "imports": [
+        "Mathlib.Algebra.MonoidAlgebra.MapDomain"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MultiplicityOneIsotypic.lean",
+      "sha256": "6efbbfe568af3cdfc4a679cfc49fd251f4f6bc57cb2fb64b8b4437df99d5bb83",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorRank",
+        "ModifiedCartan.IsotypicCopies",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MvDividedPowerNormalization.lean",
+      "sha256": "1e7090c4b4c8263fef05eb2b82c546240504d63350911c58386d6a141e413ec2",
+      "imports": [
+        "ModifiedCartan.MvPolynomialCoefficientScale",
+        "Mathlib.Algebra.MvPolynomial.Equiv"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MvPolynomialCoefficientScale.lean",
+      "sha256": "d50fa2f8c143b1ec779a65ad5f63ba5bdf48cc380aa2545783d1f3dd2dbe404c",
+      "imports": [
+        "Mathlib.RingTheory.MvPolynomial.Basic",
+        "Mathlib.Data.Complex.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/MvPolynomialTranslationJets.lean",
+      "sha256": "e590414d145bb7bda1cff0a33f3be9d9855afc88d056d31557b38a5d85565248",
+      "imports": [
+        "ModifiedCartan.PolynomialAlternantTranslation",
+        "ModifiedCartan.PartitionAlternatingPolynomial",
+        "Mathlib.Algebra.Polynomial.Roots"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/NestedPermutationErasure.lean",
+      "sha256": "55d089dd7610a1ccd502a4f803f4435d780ae1419de89e1a74af31f747e5cc3f",
+      "imports": [
+        "ModifiedCartan.FixedPointDeletion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/NestedSubmoduleTrace.lean",
+      "sha256": "3d79595f230d62c5ab1f7358d5128aca47c2f0972bf5259d6cec0a40a12d782c",
+      "imports": [
+        "Mathlib.LinearAlgebra.Trace",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/NormComparison.lean",
+      "sha256": "f833addf47039beb99cdffee31527581b58721cf6b27db942fd63df1db7536fd",
+      "imports": [
+        "FewInflection.Definitions",
+        "Mathlib.Analysis.Real.Sqrt"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/NormalizedCompositionBoundary.lean",
+      "sha256": "bcfc9b921789529a65efcdcf23462fe7404ad50d41f6c1b105cdaff4053fb707",
+      "imports": [
+        "ModifiedCartan.NormalizedGeometricLaurent",
+        "ModifiedCartan.MarkerEmbeddingCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/NormalizedCompositionResidue.lean",
+      "sha256": "8863bff56f4c3a4817aba24062f65173210f41478b695d63e28353f7cc9cf34a",
+      "imports": [
+        "ModifiedCartan.NormalizedCompositionBoundary",
+        "ModifiedCartan.CompositionBoundaryResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/NormalizedGeometricLaurent.lean",
+      "sha256": "1ac1df2100ebce326da4bf1282fa0457e7c5b28c239751ae60db318387fb4014",
+      "imports": [
+        "ModifiedCartan.CompositionLaurentWeights",
+        "ModifiedCartan.PositiveGeometricSum"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/NormalizedMinorTranslation.lean",
+      "sha256": "bee930270bdbed855e4d893709704c5512bb363b3d911aae4978bbc5284c28a1",
+      "imports": [
+        "ModifiedCartan.MinorTranslation",
+        "ModifiedCartan.PartitionTopMinor",
+        "ModifiedCartan.TableauCountPositive"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/OrderedDeltaDeterminant.lean",
+      "sha256": "c29f8c03594611e4710afeab3b17096417657525306f52f39aea91095b6d5768",
+      "imports": [
+        "ModifiedCartan.AlternantCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/OrderedPartitionExponents.lean",
+      "sha256": "7bfbc27ea7276973a5d17d869fabf15c73fa5b1b0921eb33f4820a9e50f69c7a",
+      "imports": [
+        "ModifiedCartan.AlternantCoefficients",
+        "ModifiedCartan.FiniteRowMinimum",
+        "Mathlib.Data.List.Sort"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionAlternatingDualForm.lean",
+      "sha256": "6b86f966afbc7bce8a31f172616edd16e3fdaa3664d0a786a22cd9d7716ae2f8",
+      "imports": [
+        "ModifiedCartan.PolynomialTensorContraction",
+        "ModifiedCartan.KPDividedPolynomialTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionAlternatingPolynomial.lean",
+      "sha256": "d70a95486bbb367e87df2cf08188657bc551554db4f38d9a5d0f3f2307cea734",
+      "imports": [
+        "ModifiedCartan.KPJointAlternantContraction",
+        "ModifiedCartan.KPJointWronskian"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionBoxes.lean",
+      "sha256": "68c33d0a4c796468310e292f8be15aed31764d4ec5e1043e2435e55a4d905fc6",
+      "imports": [
+        "Mathlib.Combinatorics.Young.YoungDiagram",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionCommonCoverGeometry.lean",
+      "sha256": "6790dccaa90b66c63131c12de1abb8e905b77333771eaf7c5739a42c0cea8a2f",
+      "imports": [
+        "ModifiedCartan.PartitionCovers"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionCorners.lean",
+      "sha256": "f0b1e3b4ccf5c65b58768014b38a036bdfd9dab332ba05d51c969b306e928732",
+      "imports": [
+        "ModifiedCartan.YoungPermutationSubgroups"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionCoverAddition.lean",
+      "sha256": "deb2eaaf4d9bff0c673fcaba294960ef05c5bd8296ea07510302b0a0a769b603",
+      "imports": [
+        "ModifiedCartan.PartitionCovers",
+        "ModifiedCartan.TableauPrefixSteps"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionCovers.lean",
+      "sha256": "6eb74faeb051a2c1e795eb334d48754e3811650e0a5ee08ee73315c565b84ebb",
+      "imports": [
+        "ModifiedCartan.CornerPredecessors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionMinorDegree.lean",
+      "sha256": "89b4fcf2c314833f9626cd2fc914f8a07d3f2e5a7b191693ff29b1d75f1ea64a",
+      "imports": [
+        "ModifiedCartan.PartitionMinorSupport",
+        "ModifiedCartan.MinorGrowthPaths"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionMinorDerivative.lean",
+      "sha256": "c1b4b4f826d792cfb7c0dfa385797c992039c880d3b2b355549f38b8008a53e3",
+      "imports": [
+        "ModifiedCartan.PartitionBoxes",
+        "ModifiedCartan.PolynomialMinors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionMinorSupport.lean",
+      "sha256": "8e504bef6b578914329d976996d30bb35c75982122b8b3ceb465b6f0ec49fdd8",
+      "imports": [
+        "ModifiedCartan.SortedMinorOrders",
+        "ModifiedCartan.PartitionMinorDerivative"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionPredecessorReconstruction.lean",
+      "sha256": "a34b17f36a70dfa3a5aa57caa426dec05169520934ef267d04640f405c8e6a0f",
+      "imports": [
+        "ModifiedCartan.CornerRemovalGeometry"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PartitionTopMinor.lean",
+      "sha256": "2dd11dc66219797e37fb457596865d67aa2f407d8acb63ed25c83b409406531f",
+      "imports": [
+        "ModifiedCartan.PartitionMinorSupport",
+        "Mathlib.LinearAlgebra.Matrix.Block"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PermutationCycleFibers.lean",
+      "sha256": "ec03136e0d2914606b11df1db90058bb77fafaf71e4385443f2bd2d3acd0d926",
+      "imports": [
+        "ModifiedCartan.CycleWeightedPowers"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PermutationStar.lean",
+      "sha256": "9a2e6bfb83f711bc757ad7ad8da3dc15231a1af789f15ab7dee46a6897cb76a1",
+      "imports": [
+        "ModifiedCartan.FiniteSubsetSwaps",
+        "ModifiedCartan.KPAlphaConjugation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PluckerTranslation.lean",
+      "sha256": "baf05f2b8b4cbc6235f81d5a6c94d7f925701b48bc4ce31266403fc92f9f057c",
+      "imports": [
+        "ModifiedCartan.SchubertCoordinates",
+        "ModifiedCartan.SchubertWronskianDegree",
+        "Mathlib.RingTheory.Polynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialAlternantMinors.lean",
+      "sha256": "1b490bd3a51f7b82a6aeb4653892f92f41ff11787637c2ca1da6432002d3e509",
+      "imports": [
+        "ModifiedCartan.PolynomialAlternantTranslation",
+        "ModifiedCartan.KPDividedPolynomialTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialAlternantSeparation.lean",
+      "sha256": "6fffc4fb24f467117a7e08c605f62eb98fe6e6e59b8982c6ba5823e9753e5287",
+      "imports": [
+        "ModifiedCartan.PartitionAlternatingDualForm",
+        "ModifiedCartan.PolynomialJetDegreeProfile",
+        "Mathlib.LinearAlgebra.Dual.Basis",
+        "Mathlib.LinearAlgebra.Dual.Lemmas"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialAlternantTranslation.lean",
+      "sha256": "fe90127ad604805c928a7ce446b9c170ef4e44a4cfb1813de107409ec191fde2",
+      "imports": [
+        "ModifiedCartan.AlternatingPolynomialExt",
+        "ModifiedCartan.DividedPowerAlternants",
+        "ModifiedCartan.DividedPowerPartitionMinors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialBasisReduction.lean",
+      "sha256": "2f678e5efc16e07397a8c75cfb5a3a56e858debb8e95e173ebf12995c42974d1",
+      "imports": [
+        "ModifiedCartan.PolynomialMinorBasisChange",
+        "Mathlib.LinearAlgebra.Transvection.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialCoefficientMinors.lean",
+      "sha256": "824ab962b2d7ee3e272ae8c518c144aca0c33ec94d04317ad0f66645fa2915b0",
+      "imports": [
+        "ModifiedCartan.PartitionMinorDerivative",
+        "FewInflection.PolynomialJets"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialCoefficientSpace.lean",
+      "sha256": "81bc32c1d2f6fa4521bf015324dd7e417c7c59492a17d30c9b8105d872c9c89c",
+      "imports": [
+        "ModifiedCartan.PolynomialLinearCoefficients",
+        "ModifiedCartan.PolynomialODEKernelBound",
+        "Mathlib.RingTheory.Polynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialDegreeBasis.lean",
+      "sha256": "ba0722cc3817cdda8a63b2d022efd866bb2f3bcbcf626afc51a2f21cb83fdfe2",
+      "imports": [
+        "ModifiedCartan.PolynomialBasisReduction",
+        "ModifiedCartan.OrderedPartitionExponents"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialDeterminantCoefficients.lean",
+      "sha256": "5bba7ac55226d8b44526a32d224741061c7336c057fbce83d27565a44a31bde9",
+      "imports": [
+        "ModifiedCartan.SeparateVariableProducts",
+        "Mathlib.Algebra.MvPolynomial.Equiv",
+        "Mathlib.LinearAlgebra.Matrix.Determinant.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialFourierKernel.lean",
+      "sha256": "82d8c6699252da800020e91937f961a1097df1315cbebd948774eebf7639460d",
+      "imports": [
+        "ModifiedCartan.PolynomialSpechtFourier",
+        "Mathlib.Algebra.MvPolynomial.Rename"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialInitialBasisExistence.lean",
+      "sha256": "0e4b9c75e2652030679a8c897983995f84cdb27acef9d51d52018917f49eb277",
+      "imports": [
+        "ModifiedCartan.PolynomialJetMatrixGauge",
+        "ModifiedCartan.PolynomialSpaceSchubert",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialInverseContinuation.lean",
+      "sha256": "371881413617074943c1566791567a4947935da60b90b3fe29077c3d4f7bc083",
+      "imports": [
+        "ModifiedCartan.MatrixCyclicOpen",
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Algebra.Polynomial.Roots"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialJetDegreeProfile.lean",
+      "sha256": "1fca6aa91e388a03c53060cf9d1af0e224005d5c2af0f3d587e1db8821bd19d5",
+      "imports": [
+        "ModifiedCartan.PolynomialJetSupport",
+        "ModifiedCartan.MvPolynomialTranslationJets",
+        "Mathlib.LinearAlgebra.Matrix.Adjugate"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialJetMatrixGauge.lean",
+      "sha256": "f6f6c5ee06b8288ef83634a20a9449994fd2e763b5b781d96632336d27a4e3cc",
+      "imports": [
+        "ModifiedCartan.PolynomialMinorBasisChange",
+        "Mathlib.LinearAlgebra.Matrix.NonsingularInverse"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialJetSupport.lean",
+      "sha256": "d4304a047fad1c677ca007c639fb51e33beccb93dd1835b3103d2d694581fb58",
+      "imports": [
+        "ModifiedCartan.PolynomialAlternantMinors",
+        "ModifiedCartan.PolynomialMinorBasisChange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialLinearCoefficients.lean",
+      "sha256": "0be24a9fcd8dedee8843c37f6ebf3599940ca574daf57f70f3d6030e094c5540",
+      "imports": [
+        "ModifiedCartan.TranslatedDifferentialKernel",
+        "Mathlib.Algebra.Polynomial.Module.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialMapDensity.lean",
+      "sha256": "42f76fb87f08a933f3cb922d297c545a5da947fa4fd006a046fb968c89299e72",
+      "imports": [
+        "Mathlib.RingTheory.AlgebraicIndependent.TranscendenceBasis",
+        "Mathlib.Algebra.MvPolynomial.Funext",
+        "Mathlib.Algebra.Polynomial.Div"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialMinorBasisChange.lean",
+      "sha256": "7c921d98a1a3b8ce8bb067e2e865563b65583ef56b1831d7bd829d7c69afaf5c",
+      "imports": [
+        "ModifiedCartan.PartitionMinorSupport",
+        "Mathlib.LinearAlgebra.Matrix.Basis"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialMinors.lean",
+      "sha256": "c89908cd1fbe18b50d30d4792ad58cdafdeaaca6eabac8bf35ee23bae741dc21",
+      "imports": [
+        "FewInflection.PolynomialJets",
+        "FewInflection.FundamentalAnalytic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialODEAdjugate.lean",
+      "sha256": "6393dd95ed561947c6743575a260c81c192a3047983f30ac5d92114d149be70d",
+      "imports": [
+        "ModifiedCartan.PolynomialODEJetMatrix",
+        "Mathlib.Algebra.Polynomial.OfFn"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialODEAdjugateMap.lean",
+      "sha256": "a0af4110877f88d1f4adc62634cdb4349cea93b487a7e33631334753204aae92",
+      "imports": [
+        "ModifiedCartan.PolynomialODEAdjugate"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialODEJetMatrix.lean",
+      "sha256": "cb54402c219fbbb0ad1ac45b8da25a393f5e813f5d0087a66d0c0c3c1276494d",
+      "imports": [
+        "Mathlib.Algebra.Polynomial.Derivative",
+        "Mathlib.LinearAlgebra.Matrix.Block"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialODEKernelBound.lean",
+      "sha256": "cf1e8add4b7c8f3d8bbeeb528bc4c08d64392554b045db3cf583036309be5f5b",
+      "imports": [
+        "ModifiedCartan.WronskianNontrivial",
+        "FewInflection.PolynomialJets",
+        "Mathlib.LinearAlgebra.Matrix.Nondegenerate",
+        "Mathlib.LinearAlgebra.Dimension.Finite"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialPrimitives.lean",
+      "sha256": "2ec196ab9cfc19d446a8697fde2e7fbef06e9c5c7670fbe123682cd6dfec7d6e",
+      "imports": [
+        "ModifiedCartan.DividedPowerPolynomials",
+        "Mathlib.Algebra.Polynomial.Basis"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialScalarSeries.lean",
+      "sha256": "f74a23feb57c1b63a4cfa9ed385392495b2bbc4fd66c805bfeef974131726162",
+      "imports": [
+        "Mathlib.RingTheory.MvPowerSeries.Basic",
+        "Mathlib.Algebra.MvPolynomial.Eval"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialSpaceSchubert.lean",
+      "sha256": "f52e52622303c86cc1c55e1dee9ccc1b6d8bd615b978e2095ea1e046b5fc20d0",
+      "imports": [
+        "ModifiedCartan.PolynomialDegreeBasis",
+        "ModifiedCartan.SchubertMonicWronskian",
+        "ModifiedCartan.PolynomialAlternantTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialSpechtFourier.lean",
+      "sha256": "809964d77a0d2b11b4f0e9eb37c901bbce5bdc9b8e1a18680f694db508a7dde3",
+      "imports": [
+        "ModifiedCartan.SpechtFourierExpansion",
+        "Mathlib.Algebra.MvPolynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialTensorContraction.lean",
+      "sha256": "29b1df2776f70c01630dfa0c6d97053053506004862caf7065cafbcd2288073d",
+      "imports": [
+        "ModifiedCartan.PolynomialTensorFunctional",
+        "ModifiedCartan.PolynomialCoefficientSpace"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialTensorFunctional.lean",
+      "sha256": "569e26f7f2debc5a89af6bdaada18172a7fca26d5e1474d960099a697278e23b",
+      "imports": [
+        "ModifiedCartan.PolynomialDeterminantCoefficients",
+        "ModifiedCartan.FiniteAlternants",
+        "Mathlib.Algebra.Polynomial.Basis",
+        "Mathlib.LinearAlgebra.Multilinear.Basis",
+        "Mathlib.RingTheory.MvPolynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolynomialValueSpan.lean",
+      "sha256": "acde104874650f2b4ab02bb513067c0ea5dcd693b3f0b6acc1ccf4fc6068c547",
+      "imports": [
+        "Mathlib.LinearAlgebra.Dual.Lemmas",
+        "Mathlib.Algebra.Polynomial.FieldDivision",
+        "Mathlib.Analysis.Complex.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PolytabloidDeletion.lean",
+      "sha256": "18e4af81db44bb9f69c94777a7687805569f80e98ea2e10f2bbfeca3fc7f896e",
+      "imports": [
+        "ModifiedCartan.TabloidDeletionLinear",
+        "ModifiedCartan.RemovalSigns"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/PositiveGeometricSum.lean",
+      "sha256": "ddf52b4b2fca49051e740e2c08a7deb28a22f8084d8c00b177dfaeaa9f3f19d7",
+      "imports": [
+        "Mathlib.Algebra.Ring.GeomSum",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RankedTableauDimension.lean",
+      "sha256": "5a594d553a42ece1d1c61d1fae36ceb7da2df1250247fca9926a54cb5db50ab5",
+      "imports": [
+        "ModifiedCartan.RankedYoungCoverEquivs",
+        "ModifiedCartan.CornerTableauCount"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RankedYoungCoverEquivs.lean",
+      "sha256": "e86f6f476e19b1b0f50eab5970c6004d4d64181c45dc2740097dac784b15f07f",
+      "imports": [
+        "ModifiedCartan.YoungLatticeDifferential"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RegularCharacterTrace.lean",
+      "sha256": "9764b10324f8d4dbeb77810c075587943ecd1399ac16314cdcc4393617c03809",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorRange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RemovalSigns.lean",
+      "sha256": "1a354208a2a603db503ea3da6e18194172dd1066a22638cd049809ad8e0294b6",
+      "imports": [
+        "ModifiedCartan.RemovedPermutations"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RemovedBoxes.lean",
+      "sha256": "87fef1e43ba04a501a8f2c9eee77ba24aaa3be5df36210c5b6abeb1e4f948ced",
+      "imports": [
+        "ModifiedCartan.PartitionCorners"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RemovedPermutations.lean",
+      "sha256": "9a2aab3f87d2547c017353fb966d4fc40e2a64a2ca0d3e798687127219ba2eb0",
+      "imports": [
+        "ModifiedCartan.RemovedBoxes",
+        "ModifiedCartan.TabloidRowCutoff"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ReplacedMinorOrders.lean",
+      "sha256": "02f29abee5cea8348d621b4027273ce9ce46091708a2dcb6049c6e09b86aa9ba",
+      "imports": [
+        "ModifiedCartan.ColumnPartitionMinorOrders",
+        "ModifiedCartan.PolynomialAlternantTranslation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RepresentationReindex.lean",
+      "sha256": "8754c3230a0d2b9741946d628ec1be19105c806fd002844147af4fbb8fb710da",
+      "imports": [
+        "ModifiedCartan.CharacterOrthogonalInvariant"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactorBijection.lean",
+      "sha256": "434ced58203cff5d569601fe88fb0c332c32039ad687bf0359857dff5cd0ebe0",
+      "imports": [
+        "ModifiedCartan.RightZFactorEndpoints"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactorEndpoints.lean",
+      "sha256": "cc290ba22bb268c5891b53f96b7e4557736f3e1c3a1b247828c504512dbeff07",
+      "imports": [
+        "ModifiedCartan.RightZFactorExistence"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactorExistence.lean",
+      "sha256": "afa454110f07d565547c633bdfec6d5662b177719a1d5ad8de79d7c9c1e6e66a",
+      "imports": [
+        "ModifiedCartan.ZConstructedRightFactor",
+        "ModifiedCartan.ZSupportParameters"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactorLaurentProduct.lean",
+      "sha256": "c7557784b8ac4f6c621df22c2117d0ff5e7311834c8563bef7a0266986d6d5c7",
+      "imports": [
+        "ModifiedCartan.ZSupportLaurentNormalization",
+        "ModifiedCartan.ZComplementLaurentProduct",
+        "ModifiedCartan.BernsteinCompositionSeries"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactorLaurentSeries.lean",
+      "sha256": "1fe018bd3a44eef17eba32d14766be5df56bbc01b3898fd57770fe13daee6623",
+      "imports": [
+        "ModifiedCartan.RightZFactorPolynomial",
+        "ModifiedCartan.CycleSubsetLaurentProduct",
+        "ModifiedCartan.ZCycleSupportFiniteness"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactorPolynomial.lean",
+      "sha256": "20bd56cccef49bcb53e9f4c7fbc31cdcf2a00ed4c1b92d01e63aa02b094ea3dc",
+      "imports": [
+        "ModifiedCartan.RightZFactorSignedSum",
+        "ModifiedCartan.ZFactorCardParity",
+        "ModifiedCartan.CycleUnionPowerSums",
+        "ModifiedCartan.FiniteAlphabetShift"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactorResidue.lean",
+      "sha256": "4eb898414c80f240cf8ec7a010507ab7662d70cca236b3d93b950e2776cae0c1",
+      "imports": [
+        "ModifiedCartan.RightZFactorLaurentProduct",
+        "ModifiedCartan.BernsteinScalarResidue",
+        "ModifiedCartan.FactoredCompositionResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactorSignedSum.lean",
+      "sha256": "65e48cf06daada7949c60bdc95c5c97002ff7f4074eadf2276da325cc45e8efd",
+      "imports": [
+        "ModifiedCartan.ZFactorPowerSums",
+        "ModifiedCartan.ZFactorSign",
+        "ModifiedCartan.RightZFactorBijection"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RightZFactors.lean",
+      "sha256": "0913a593db6e95b6c6cfa48f0e9082b7e4044cf64f826a350ac392777450493d",
+      "imports": [
+        "ModifiedCartan.ZFactorSets",
+        "ModifiedCartan.SupportedPermutations"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RowColumnFiniteCharacters.lean",
+      "sha256": "31c6544539aeff6b18a8eb20a5a54f48e49315548d68da711309ddb35967aa61",
+      "imports": [
+        "ModifiedCartan.RowColumnSpechtCharacters",
+        "ModifiedCartan.SpechtCharacterLabels"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RowColumnSpechtCharacters.lean",
+      "sha256": "d427226d2d63835e98aa718efc5bf3660645d6c7e1ac600171527a49c5975a2c",
+      "imports": [
+        "ModifiedCartan.CyclicSpechtCharacters",
+        "ModifiedCartan.YoungColumnAlternation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RowFiltrationCharacterRelabel.lean",
+      "sha256": "582e18fb643595c7770a995e875fddaa62e360a87d15baebfa471dd41ab90b6c",
+      "imports": [
+        "ModifiedCartan.RowFiltrationRelabel",
+        "ModifiedCartan.RemovalSigns"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/RowFiltrationRelabel.lean",
+      "sha256": "cd8ff0a3bb213847e2967b121eceb8c615b6169062186149a5d9bb3f788d3775",
+      "imports": [
+        "ModifiedCartan.SpechtRowFiltration"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ScalarActionAdjoin.lean",
+      "sha256": "201b3fae2afaa57879bbed4f548e9d164d5c829399e9beca1df5efd12765858c",
+      "imports": [
+        "ModifiedCartan.CyclicCentralizer"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ScalarActionCharacter.lean",
+      "sha256": "e1579a755658e649f9a4631d8ce47766f6920b6295fc96ba730fe8c04ce31799",
+      "imports": [
+        "ModifiedCartan.ScalarActionAdjoin"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ScaledMonomialEvaluation.lean",
+      "sha256": "616762767c4c46d38f215a811fd5d1c87220cdb5df80424aa7700fb89b7037d5",
+      "imports": [
+        "ModifiedCartan.ScaledMonomialPowerSums",
+        "ModifiedCartan.InjectiveColorSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ScaledMonomialPowerSums.lean",
+      "sha256": "167cca75742d2bf96d006c77c0f48a392f48d8428f52dc383c881fcc65903565",
+      "imports": [
+        "ModifiedCartan.SignedFixedColorings",
+        "ModifiedCartan.CycleWeightedPowers",
+        "Mathlib.Algebra.MvPolynomial.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertAdjugateReconstruction.lean",
+      "sha256": "453b1bbc25fc3a70501dc9a0a91f38e376782f433f22ba6abf01a94c022dfd4d",
+      "imports": [
+        "ModifiedCartan.SchubertColumnDifferentialEquation",
+        "ModifiedCartan.SchubertDegreeInitialCoefficients",
+        "ModifiedCartan.PolynomialCoefficientMinors",
+        "ModifiedCartan.PolynomialODEAdjugateMap",
+        "ModifiedCartan.InitialPolynomialJetBounds"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertChartPolynomials.lean",
+      "sha256": "ee0e90f6d2378d5ad6ff948cbf14d462ae7106a9b87bf1fa889d866d6b257863",
+      "imports": [
+        "ModifiedCartan.SchubertChartSlots",
+        "ModifiedCartan.DividedPowerPolynomials",
+        "ModifiedCartan.SchubertFrameReconstruction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertChartSlots.lean",
+      "sha256": "fdbc5c5e26471aa0fad4d61e1ea382c93db5536f7ab04d19ccb453b592e18713",
+      "imports": [
+        "ModifiedCartan.FinitePartitions",
+        "Mathlib.Order.Interval.Finset.Fin"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertChartSurjectivity.lean",
+      "sha256": "bcada706a32a596645c9993d0d3ee35678fe3461863ab98332898a8b4f29a2b0",
+      "imports": [
+        "ModifiedCartan.SchubertChartPolynomials",
+        "ModifiedCartan.SchubertCoordinateInjectivity"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertColumnDifferentialEquation.lean",
+      "sha256": "46b61bf427a40a96cfd8b84ee2bbc93b78e0542fe7710a4f002787d0135764b4",
+      "imports": [
+        "ModifiedCartan.ColumnMinorDifferentialEquation",
+        "ModifiedCartan.SchubertCoordinates",
+        "ModifiedCartan.KPJointCoefficientSpace"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertCoordinateInjectivity.lean",
+      "sha256": "8e2db8ebb4d6b7d26cdd73d694c6f773dc9bfc1dd1da20ea922b86afd8da44a0",
+      "imports": [
+        "ModifiedCartan.PolynomialAlternantSeparation",
+        "ModifiedCartan.SchubertCoordinates"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertCoordinatePolynomials.lean",
+      "sha256": "5bacaf6f9b69197b6c4ae5a90635f3d19bf9beb625b02e2cd1f0c4d39482987d",
+      "imports": [
+        "ModifiedCartan.SchubertChartPolynomials",
+        "ModifiedCartan.SchubertMonicWronskian"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertCoordinates.lean",
+      "sha256": "d25555f7c7ff7ca3555b33d36c92287b62a762922a851af33e5862e88d43c970",
+      "imports": [
+        "ModifiedCartan.NormalizedMinorTranslation",
+        "ModifiedCartan.PolynomialMinorBasisChange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertDegreeInitialCoefficients.lean",
+      "sha256": "2afdef999d555dbcce7e3929f95cd0870e6b759a930811864f55d54f846505e3",
+      "imports": [
+        "ModifiedCartan.SchubertCoordinates",
+        "ModifiedCartan.SizedYoungDiagrams",
+        "ModifiedCartan.PolynomialODEAdjugate",
+        "FewInflection.PolynomialJets"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertDimensionStep.lean",
+      "sha256": "d700c17d686e8c09add228ed29f4a5fcec83427a06564fff5208b2e48420faa6",
+      "imports": [
+        "ModifiedCartan.PolynomialPrimitives",
+        "ModifiedCartan.MinorDimensionStep",
+        "ModifiedCartan.SchubertFrameReconstruction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertDimensionTransfer.lean",
+      "sha256": "158b9dcccdaee6657cfe2f066d91315451fcff90ec5483cf20c0f8fb2daa9ec8",
+      "imports": [
+        "ModifiedCartan.SchubertDimensionStep"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertFrameReconstruction.lean",
+      "sha256": "0ed3251d4a97a409a88567d6c561659471340484d4473bfdd87378024f713868",
+      "imports": [
+        "ModifiedCartan.PolynomialJetDegreeProfile",
+        "ModifiedCartan.PolynomialJetMatrixGauge",
+        "ModifiedCartan.SchubertCoordinates"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertMinorRatios.lean",
+      "sha256": "87e89845f27363c20a14044c650f5b63d407be60ebfa22b025c4cdd7809af348",
+      "imports": [
+        "ModifiedCartan.SchubertMonicWronskian"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertMonicWronskian.lean",
+      "sha256": "800da683214b56722391aff4f3e475d4af182e97ec2df3a55b85b97fda463bbd",
+      "imports": [
+        "ModifiedCartan.PluckerTranslation",
+        "ModifiedCartan.PolynomialODEKernelBound",
+        "Mathlib.Algebra.Polynomial.FieldDivision"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertUniversalMinors.lean",
+      "sha256": "67657e919562636f2636925c1117d269b50ccabf3708d8257960ba25ad89d7c3",
+      "imports": [
+        "ModifiedCartan.KPExpectationExpansion",
+        "ModifiedCartan.KPSchubertConstantVector",
+        "ModifiedCartan.SchubertMinorRatios",
+        "FewInflection.PluckerBounds"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SchubertWronskianDegree.lean",
+      "sha256": "215b3a218e3db3f62daaf4ac5990d4afe45cb2a37f244107f9e9699ad7512897",
+      "imports": [
+        "ModifiedCartan.MinorDerivativeSubpartitions",
+        "ModifiedCartan.PartitionMinorDegree",
+        "ModifiedCartan.PartitionTopMinor",
+        "ModifiedCartan.TableauCountPositive"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SeparateVariableProducts.lean",
+      "sha256": "20229fa05d94f313b6a0419844c73fb41a3f6010519976cfe3f3505bf9832e34",
+      "imports": [
+        "ModifiedCartan.SingleVariableSeries"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SeparatedFrobeniusCauchy.lean",
+      "sha256": "e234c72e7674fc6ba5b209316ef97dff4455c04420b92f6c8745ca3d6f48b3de",
+      "imports": [
+        "ModifiedCartan.FiniteFrobeniusCauchy",
+        "ModifiedCartan.CauchyKernelCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SeriesHomogenization.lean",
+      "sha256": "7904e044a5da2d3f7abf9cdd9d65efc65407bec8872a55b6176dec53172afa16",
+      "imports": [
+        "ModifiedCartan.SingleVariableSeries"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ShiftedCompositionAlphabet.lean",
+      "sha256": "32c55742accea97616ec98dafe79471c0317682e8e59e1145c005be989fd2e57",
+      "imports": [
+        "ModifiedCartan.LaurentCompositionExpansion",
+        "ModifiedCartan.EmbeddingProductTransport",
+        "ModifiedCartan.NormalizedCompositionResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SigmaFiberPermutations.lean",
+      "sha256": "1b50111f1e06e6d8644ea927ebb683ad37baf3baa9b0319f660dd00b885b937a",
+      "imports": [
+        "Mathlib.GroupTheory.Perm.Sign",
+        "Mathlib.Data.Fintype.Sigma"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SigmaPermutationSign.lean",
+      "sha256": "744b7bf7a8ebeef72cd79ddb557196c67278d17313282cdee134cc416c11b5e5",
+      "imports": [
+        "ModifiedCartan.SigmaFiberPermutations",
+        "ModifiedCartan.BlockInflation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SignedBlockInflation.lean",
+      "sha256": "7010e1c17cfafa2ff403538424776f7647282bd94a9f85ce2decea83bdb9ff0d",
+      "imports": [
+        "ModifiedCartan.SigmaPermutationSign",
+        "ModifiedCartan.BlockInflationPowerSums",
+        "ModifiedCartan.ScaledMonomialPowerSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SignedColorStabilizer.lean",
+      "sha256": "72a73dd5bb0347198bdc59296cee3bbbe4fe52d6eedd40cc6823d31ce05ba4b2",
+      "imports": [
+        "ModifiedCartan.FiniteInvolutionSum",
+        "Mathlib.GroupTheory.Perm.Sign"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SignedFixedColorings.lean",
+      "sha256": "31c3cd50bd1fdd60115aed7e6033559a7f8e7457df8d2e38870d248182bcd6b3",
+      "imports": [
+        "ModifiedCartan.SignedColorStabilizer",
+        "Mathlib.Algebra.Module.BigOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SimpleEigenbasisCyclic.lean",
+      "sha256": "e90fd9a6c0be1a19439631d0fae78bb4fbc5445f392acd378ba65d598b23a36f",
+      "imports": [
+        "ModifiedCartan.CyclicCentralizer",
+        "Mathlib.LinearAlgebra.Lagrange",
+        "Mathlib.LinearAlgebra.Eigenspace.Minpoly"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SingleVariableSeries.lean",
+      "sha256": "8b4e504e40b60789a2d40490a8d71c7c1439bafd7acb81edc61ab90f703d6445",
+      "imports": [
+        "Mathlib.RingTheory.MvPowerSeries.Rename",
+        "Mathlib.RingTheory.PowerSeries.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SizedPartitionsInSquare.lean",
+      "sha256": "5401a90a8b5cbf7a06229b84acf89d37b5122b5b7f7f8593a4f172e1cb4c377d",
+      "imports": [
+        "ModifiedCartan.BoundedPartitionSquare",
+        "ModifiedCartan.FixedPointPermutationSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SizedSubsetInsertion.lean",
+      "sha256": "72f6ea0efb62c70f5bb7fe08ca98505830f1b16430b8d2546d2823f994380cc3",
+      "imports": [
+        "ModifiedCartan.KPOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SizedYoungDiagrams.lean",
+      "sha256": "4f96e12c25e136af0f670b41b22d3e06e686a4f9c900e5f06402d8f8e48aa02e",
+      "imports": [
+        "ModifiedCartan.FinitePartitions"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SkewAdditions.lean",
+      "sha256": "fe66d0005e1c70eaca812e9ecfab40002e167cf1195402bd38708582f90ee001",
+      "imports": [
+        "ModifiedCartan.TableauFirstBox",
+        "ModifiedCartan.SkewBoxInsertion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SkewBoxInsertion.lean",
+      "sha256": "d10c570d25b4eaa7d7fb2cf640d13c2dc3f6f0ba5f604659f681cdc61b774c86",
+      "imports": [
+        "ModifiedCartan.SkewTableaux"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SkewGrowthRows.lean",
+      "sha256": "be690f646512b365fbfee269df47aa3fe9237440b06be59acf825314a8e3d518",
+      "imports": [
+        "ModifiedCartan.SkewAdditions",
+        "ModifiedCartan.MinorGrowthPaths"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SkewTableaux.lean",
+      "sha256": "1453e6b99457581ef24fb0b5803f96aa6ac053b1c3940674e2e4504823997712",
+      "imports": [
+        "ModifiedCartan.PartitionBoxes"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SortedColumnLabels.lean",
+      "sha256": "68d0b8d838551607416a6c8b7b6c291716ba84f69fc03823f74f01d1da5f2439",
+      "imports": [
+        "ModifiedCartan.YoungFillings",
+        "ModifiedCartan.YoungColumns",
+        "Mathlib.Data.Finset.Sort"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SortedMinorOrders.lean",
+      "sha256": "15713d350126fd2aaaee1991fa776a4e4ca1ff7e6b282835f181ce2c429dad1a",
+      "imports": [
+        "ModifiedCartan.FinitePartitions",
+        "ModifiedCartan.PolynomialMinors",
+        "Mathlib.Order.Interval.Finset.Fin"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtAlgebraFaithful.lean",
+      "sha256": "42391aca3a992c234bb9a380f25eb12a0cb5f6ad851b07b4218c1d2a62f6dc32",
+      "imports": [
+        "ModifiedCartan.IsotypicAnnihilator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtBranchingCommonAlphabet.lean",
+      "sha256": "70bb7aa30f87e542d0f2ec2a149ca29d58f79aa1bbce1490a4f185e6dc9c3de9",
+      "imports": [
+        "ModifiedCartan.CornerRemainingAlphabet",
+        "ModifiedCartan.SpechtCharacterBranching",
+        "ModifiedCartan.SpechtCharacterLabels"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtBranchingEquiv.lean",
+      "sha256": "5cb161dbb3c00fffe6c0b4a6108be28f23d25f9e862122f90a13842c4808e13e",
+      "imports": [
+        "ModifiedCartan.SpechtBranchingMap"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtBranchingMap.lean",
+      "sha256": "64269b9b385b8bf55da6476c523340eb3c5f204a5034edda32e2cb21677f67c4",
+      "imports": [
+        "ModifiedCartan.BranchingImageEquality"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtCharacterBranching.lean",
+      "sha256": "cc7faa20c44606f30cd71e25199ea9f76e0cef3bb926ce3eb79fe480ed83e400",
+      "imports": [
+        "ModifiedCartan.CornerCharacterContributions"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtCharacterLabels.lean",
+      "sha256": "5d100ffe4f07ba3a2b01fcb894a5244091f5105ad1164c06340fec36c277945c",
+      "imports": [
+        "ModifiedCartan.SpechtRepresentation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtCharacterPairingStep.lean",
+      "sha256": "50a7066da5bb4a6878279ccae239b44892d1c61bfe5f2afe198fb161d6f5d30c",
+      "imports": [
+        "ModifiedCartan.SpechtFiniteAlphabetRepresentation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtCharacterProjection.lean",
+      "sha256": "bd977e23fc72817f9b309a18771595b499f7572e4f16a7170b3d9c45265b16f7",
+      "imports": [
+        "ModifiedCartan.StandardPolytabloidBasis",
+        "ModifiedCartan.SymmetricCharacterProjection"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtClassExpansion.lean",
+      "sha256": "4dd3c8a9726ef078dc1dac2e79d5d2211ecf6b6dffaad8834a07c0542b22aafd",
+      "imports": [
+        "ModifiedCartan.SpechtProjectorCompleteness",
+        "ModifiedCartan.ClassScalarIsotypic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtCornerDirectSum.lean",
+      "sha256": "9f665ad4535559cba122839ac7ef8717b509559a988dd11a7a1796eddef17c19",
+      "imports": [
+        "ModifiedCartan.SpechtCornerStarEigenvalue",
+        "ModifiedCartan.EigenblockBasis",
+        "ModifiedCartan.CornerTableauCount"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtCornerStarEigenvalue.lean",
+      "sha256": "709fd30b622ac7fffd9b04d8745c07adfd10d4bb41e8433ee61e747e9ef73085",
+      "imports": [
+        "ModifiedCartan.SubsetRepresentationOperators",
+        "ModifiedCartan.TotalTranspositionReindex",
+        "ModifiedCartan.YoungTranspositionCorner"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtDimensionSquareSum.lean",
+      "sha256": "4a51bd8c7ff761cbb52ecd98f2edfcb0c8a072ea8c077e6afa67793846ed83ac",
+      "imports": [
+        "ModifiedCartan.UpwardTableauDimension"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtDistinctCharacters.lean",
+      "sha256": "e99c9bcf8fa2ec845bfedd35a7c1984c0de0b4a926fd9efac786b06df3e931e6",
+      "imports": [
+        "ModifiedCartan.SpechtPredecessorsFromCharacters",
+        "ModifiedCartan.SpechtShapeReconstruction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtFiltrationRanks.lean",
+      "sha256": "54489048986f559f9b92c131e993f373e7c714d4661bddf9bad675317efd77f1",
+      "imports": [
+        "ModifiedCartan.RowFiltrationRelabel"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtFiniteAlphabetBranching.lean",
+      "sha256": "3ca95656a52eddef70ac54a01caca059de8526f862c44875db17970ceb9a6a56",
+      "imports": [
+        "ModifiedCartan.SpechtBranchingCommonAlphabet",
+        "ModifiedCartan.FixedPointDeletion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtFiniteAlphabetRepresentation.lean",
+      "sha256": "5282d016dfad639b0eb575fffca75388c581bada33093b2415836a2a8bed861e",
+      "imports": [
+        "ModifiedCartan.SpechtCharacterLabels",
+        "ModifiedCartan.StandardPolytabloidBasis"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtFourierExpansion.lean",
+      "sha256": "b530d566b2c6eadadc9823d97151ee36777688c9c212e09930a3a05c9519bf27",
+      "imports": [
+        "ModifiedCartan.ClassFunctionSpechtExpansion",
+        "ModifiedCartan.ClassFunctionRegularCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtInductionCharacter.lean",
+      "sha256": "bf6973067e79f183e3aa23745d8915039bfd87fc5629b42135c1dad057cde7f9",
+      "imports": [
+        "ModifiedCartan.SpechtInductionPairing",
+        "ModifiedCartan.SpechtClassExpansion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtInductionPairing.lean",
+      "sha256": "68f613898922263398d64908dd26d8821dd90bb848ec06549c75098898f4be49",
+      "imports": [
+        "ModifiedCartan.SpechtRestrictionPairing"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtKPCommutation.lean",
+      "sha256": "00e17b4cf8a91967ff5918f7af00212c379a78738564ceb28e9d02ed13518767",
+      "imports": [
+        "ModifiedCartan.KPCurveMatrix",
+        "ModifiedCartan.KPBetaDeformedCommutation",
+        "ModifiedCartan.PolynomialInverseContinuation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtPredecessorsFromCharacters.lean",
+      "sha256": "d99010a856f403de9e8e59815cf6c5c508750366f917b1c2611bb2e46daf9969",
+      "imports": [
+        "ModifiedCartan.SpechtCharacterPairingStep",
+        "ModifiedCartan.SpechtRestrictedCharacterSums",
+        "ModifiedCartan.CornerPredecessors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtProjectorCompleteness.lean",
+      "sha256": "7660b648e18d29ddd4b945322b3e35ca6aba7f77bc1fbd537d4e762466c28333",
+      "imports": [
+        "ModifiedCartan.SpechtRegularCompleteness",
+        "Mathlib.RepresentationTheory.Equiv"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtRegularCompleteness.lean",
+      "sha256": "4a2ac174b94b5bbd110f4cc16bdae2fb7e9952835073bff7aeeae981a09973fd",
+      "imports": [
+        "ModifiedCartan.CharacterProjectorOrthogonal",
+        "ModifiedCartan.RegularCharacterTrace",
+        "ModifiedCartan.FiniteOrthogonalProjectors",
+        "ModifiedCartan.SpechtDimensionSquareSum",
+        "ModifiedCartan.SpechtDistinctCharacters"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtRepresentation.lean",
+      "sha256": "5adb2bcfc67c9c2687db0556546e7d618f99bdfe49245cbb1979e49cd29d5322",
+      "imports": [
+        "ModifiedCartan.YoungSpechtIrreducible",
+        "ModifiedCartan.RepresentationReindex"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtRestrictedCharacterSums.lean",
+      "sha256": "0988fef34726313e85ee45669cbfec30fef636315b6399a9bca330a933b63c36",
+      "imports": [
+        "ModifiedCartan.SpechtFiniteAlphabetBranching"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtRestrictionMultiplicity.lean",
+      "sha256": "476d24e477bc302b34cf3a5296ff7496441ab0406685be83c55a21acbf32047b",
+      "imports": [
+        "ModifiedCartan.MultiplicityOneIsotypic",
+        "ModifiedCartan.SpechtRestrictionPairing",
+        "ModifiedCartan.SpechtFiniteAlphabetRepresentation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtRestrictionPairing.lean",
+      "sha256": "15646c94c2649a2097408aaafdb066ab629f513adff73b4a9bcab6ccbce21423",
+      "imports": [
+        "ModifiedCartan.InducedSpechtClassFunction",
+        "ModifiedCartan.SpechtDistinctCharacters",
+        "ModifiedCartan.PartitionCovers"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtRowCharacters.lean",
+      "sha256": "7129d57cd4a2039347e25675d8e120f1d12e356e1b1a5eaed7bdf1359a2314a7",
+      "imports": [
+        "ModifiedCartan.SpechtBranchingEquiv",
+        "ModifiedCartan.TraceSurjectiveKernel",
+        "ModifiedCartan.NestedSubmoduleTrace"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtRowFiltration.lean",
+      "sha256": "dce388d39cf51814a843f885c62dd2373b6928ab25f8955dc7b8b07c470ee5c3",
+      "imports": [
+        "ModifiedCartan.LastRowSupport",
+        "ModifiedCartan.TabloidRowCutoff"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SpechtShapeReconstruction.lean",
+      "sha256": "a4ad2193e72ef3c6aae0afdcf33ac73405e270a91d52cd5335042ebbd9da5b28",
+      "imports": [
+        "ModifiedCartan.TwoBoxSpechtDistinction",
+        "ModifiedCartan.PartitionPredecessorReconstruction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SquarefreeMarkerEvaluation.lean",
+      "sha256": "124639b0c5c9dae02aad76fdfbc8074f3699fad8f16680548316125e4ff09ff4",
+      "imports": [
+        "ModifiedCartan.MarkerAssignmentDegree",
+        "Mathlib.Algebra.MvPolynomial.Eval"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/StaircaseWeights.lean",
+      "sha256": "a479cd62db7fd6503b5fdfcf02ebd7f0c59d0b9911778170aeffc304648884e8",
+      "imports": [
+        "ModifiedCartan.FinitePartitionDegrees",
+        "ModifiedCartan.StrictPermutationWeight"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/StandardPolytabloidBasis.lean",
+      "sha256": "8183c33b84709c421cd43efb6965546a9d934f5c22251ed512bc30aed4833c9c",
+      "imports": [
+        "ModifiedCartan.YoungTabloidWeight",
+        "ModifiedCartan.LeadingCoefficientIndependence",
+        "ModifiedCartan.StandardPolytabloidSpanning"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/StandardPolytabloidSpanning.lean",
+      "sha256": "4f61fdf79454517f2b9dae3062dcdd63888f6302050db88f9688ac93bdff7efc",
+      "imports": [
+        "ModifiedCartan.YoungFillingWeight",
+        "ModifiedCartan.ColumnStandardSpanning"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/StrictPermutationWeight.lean",
+      "sha256": "3d5d244b152410933fb36a25a4a679d74cbb8c86312d5fe5de54fe0565a950d4",
+      "imports": [
+        "ModifiedCartan.FiniteRowMinimum",
+        "Mathlib.Algebra.Order.Rearrangement",
+        "Mathlib.Order.Preorder.Finite"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SubgroupAlternation.lean",
+      "sha256": "f7eee9b89a0d9a7c8987e21263c6525c3c042989355bd6f765a81ff908e9d254",
+      "imports": [
+        "ModifiedCartan.YoungTabloidCancellation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SubgroupFiniteSumCoefficient.lean",
+      "sha256": "0e72acd7a1adc6b9c19d381d8f2a81572db577c3704569f9bb371083a4bf0704",
+      "imports": [
+        "ModifiedCartan.KPAlphaCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SubmoduleImageRankNullity.lean",
+      "sha256": "3ff0a7ba2ca7124a74df09d8e094f92ec7754f420cce1453d7ef288197b26f9b",
+      "imports": [
+        "ModifiedCartan.YoungSpechtModule",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SubsetAlternatingCancellation.lean",
+      "sha256": "a875b8c05bb6e474f97374138f72e15cf7a94b004d141a342ac232c3177c6bbd",
+      "imports": [
+        "ModifiedCartan.SupportedPermutations",
+        "ModifiedCartan.SubgroupAlternation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SubsetRepresentationOperators.lean",
+      "sha256": "597556ea90046aaaf9915d4564dbf63655e1cce7b3f7c8ba1f55e36bef58aee8",
+      "imports": [
+        "ModifiedCartan.TotalTranspositionDeletion",
+        "ModifiedCartan.SpechtRestrictionMultiplicity",
+        "ModifiedCartan.TotalTranspositionOperator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedDataColoringTransport.lean",
+      "sha256": "dbc0dc8180e10141dd001e459c7cefbe6a8e1cf857fa5a1297123705cbe9b3e1",
+      "imports": [
+        "ModifiedCartan.SupportedDataRestriction",
+        "ModifiedCartan.FixedColoringTransport",
+        "Mathlib.GroupTheory.Perm.Sign"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedDataRestriction.lean",
+      "sha256": "00b4d4773567a35f5ace49eafdb7b3917a32ba475910ac4adc7a2e11861b21e8",
+      "imports": [
+        "ModifiedCartan.FiniteSubtypeSupports",
+        "ModifiedCartan.ZFactorizationParameters"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedMarkerEvaluation.lean",
+      "sha256": "be884e43abe3b49f54540122121848f0b580c5f77143797193af67b323cf8124",
+      "imports": [
+        "ModifiedCartan.SquarefreeMarkerEvaluation",
+        "ModifiedCartan.SupportedPowerSumProduct"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedPermutationImages.lean",
+      "sha256": "debaf4b0e3b4c4f72849e5b53a01c5a4642a8f5a55a34d46be4a8f4abbc2363b",
+      "imports": [
+        "ModifiedCartan.FixedPointDeletion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedPermutationRestrictions.lean",
+      "sha256": "60d59fd9ff4718a7bafd26bfafca3580b9427e803505ae13361048af09d093f8",
+      "imports": [
+        "ModifiedCartan.SupportedPermutations"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedPermutations.lean",
+      "sha256": "f12eae74deceaae7cb0f0afbe2fb5b2a6e734791a78a4b29a161d95920f594d3",
+      "imports": [
+        "ModifiedCartan.YoungPermutationSubgroups"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedPowerSumEvaluation.lean",
+      "sha256": "e2829d34f6acf4ec8054f03d4608771412290ebdf6d1ac29b2925315fe8876cc",
+      "imports": [
+        "ModifiedCartan.KPAlphaFrobeniusCoefficients",
+        "ModifiedCartan.SupportedMarkerEvaluation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedPowerSumProduct.lean",
+      "sha256": "e59888e3fad85bf700691bf10650bc12a3282cdb6eeabc04b2d68ea1e4a53ef3",
+      "imports": [
+        "ModifiedCartan.SupportedPowerSumQuadratic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedPowerSumQuadratic.lean",
+      "sha256": "89c6462e98e78607fe032dd5c0e0ccc50d24a172b97ecde508b151e3c811c9b6",
+      "imports": [
+        "ModifiedCartan.ZFactorizationLaurentSeries",
+        "ModifiedCartan.ComplementMarkerDegrees"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedQuadraticMarkerCoefficients.lean",
+      "sha256": "bcab14ae2e78b9cb5bbb7b99656f0472fd49734125606eb7138a4267e79162c3",
+      "imports": [
+        "ModifiedCartan.AmbientFactorizationLaurentSeries",
+        "ModifiedCartan.ComplementMarkerClassification"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedQuadraticResidue.lean",
+      "sha256": "a295f025b3c18b8b58402386cc9c1950deb7c03ced3426f53fc7cd14ab3cd21a",
+      "imports": [
+        "ModifiedCartan.SupportedQuadraticMarkerCoefficients",
+        "ModifiedCartan.AmbientFactorizationResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SupportedRestrictionEquivalence.lean",
+      "sha256": "aab7cbcd9467b9580b0028d8c2ab9aab0034a6f0005ff8cfc2e069f63c874faf",
+      "imports": [
+        "ModifiedCartan.SupportedPermutationRestrictions"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SymmetricCharacterProjection.lean",
+      "sha256": "d7a1cd23e518c7425f3fb60aaf3482d35a3330ad8fc2b3501347b1781e5cf30f",
+      "imports": [
+        "ModifiedCartan.CharacterProjectionBound",
+        "ModifiedCartan.IsotypicCopies",
+        "Mathlib.GroupTheory.Perm.Cycle.Type"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SymmetricOrbitPolynomial.lean",
+      "sha256": "85e7f2341261c54e7264b855cb726fe812fb7598520013b5a3daed5215475ac9",
+      "imports": [
+        "Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+        "Mathlib.Data.Fintype.Perm"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SymmetricPairDeletion.lean",
+      "sha256": "5c99a21c1076b23224b1fdb1976a981e83084cbc847f688c20af0ca564c72e7e",
+      "imports": [
+        "ModifiedCartan.FixedPointPermutationSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SymmetricPairErasureModule.lean",
+      "sha256": "8c007015f6d9de8ef07b4a13c98ee05cf238c4fbcfae3f323d9f9f5f7a2ae8bf",
+      "imports": [
+        "ModifiedCartan.SymmetricPairDeletion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/SymmetricPolynomialSpecialization.lean",
+      "sha256": "cb6376554d6cd4843d01b86e1821614eba3a0fd130271fc0a99c3e8efaf2e25f",
+      "imports": [
+        "Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem",
+        "Mathlib.RingTheory.Polynomial.Vieta",
+        "Mathlib.Analysis.Complex.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauCountPositive.lean",
+      "sha256": "19597ec6e729799e86c3c8607c86e9a1399226b5a567926aabb026f16a2de3f9",
+      "imports": [
+        "ModifiedCartan.TableauCountRecurrence",
+        "ModifiedCartan.TableauPrefixSteps",
+        "ModifiedCartan.FinitePartitions",
+        "Mathlib.Order.Preorder.Finite"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauCountRecurrence.lean",
+      "sha256": "15efdff93240c6417e0c7a506b52fd7560ab0ca93958980e4356a9d6c30ad26e",
+      "imports": [
+        "ModifiedCartan.SkewAdditions",
+        "ModifiedCartan.TableauFirstBoxEquiv"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauDeleteLast.lean",
+      "sha256": "ab41eb5e37d5d9547eb845847420425c2999dde2170f5d4a352e53dee5917611",
+      "imports": [
+        "ModifiedCartan.RemovedBoxes",
+        "ModifiedCartan.TableauLastBox"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauExtendLast.lean",
+      "sha256": "9af262bc86d998172c606c3bc14893543dfc60de9210245e2e8128d3d0ed4821",
+      "imports": [
+        "ModifiedCartan.TableauDeleteLast"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauFirstBox.lean",
+      "sha256": "e4ce76ec43597cac6a907f6fbb247ef27da058f261fb95de811c22cfdeb0a8a6",
+      "imports": [
+        "ModifiedCartan.SkewTableaux"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauFirstBoxEquiv.lean",
+      "sha256": "71f27f9a3e661955a0e63c3d77ee5dc9b9cb1495d83851ef3080e1aebb08bd8d",
+      "imports": [
+        "ModifiedCartan.TableauTail",
+        "ModifiedCartan.TableauPrepend"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauLastBox.lean",
+      "sha256": "2d48288918add1126cbd8c58be4bf3bd96b42207145dd16b630e176a9c2d8a65",
+      "imports": [
+        "ModifiedCartan.PartitionCorners",
+        "ModifiedCartan.YoungFillings"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauPrefixSteps.lean",
+      "sha256": "2693dace36361e8059e9ff57309d73a232ec095fd0eeeb02f61687af3e5175b6",
+      "imports": [
+        "ModifiedCartan.TableauPrefixes"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauPrefixes.lean",
+      "sha256": "f43370523fd1765f1f3e2b47bcc917ba7cdccccdaa669547a0dd48578697a305",
+      "imports": [
+        "ModifiedCartan.SkewTableaux"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauPrepend.lean",
+      "sha256": "a1b5bb4dea53b984e69affabf0dca4a7422d41cac1239f6c1d238c697f29fadb",
+      "imports": [
+        "ModifiedCartan.SkewBoxInsertion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TableauTail.lean",
+      "sha256": "38fd50e715bf593ea7b070c86cd46c37b36d58021f9014e1bd95552038b43bf8",
+      "imports": [
+        "ModifiedCartan.SkewBoxInsertion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TabloidDeletionLinear.lean",
+      "sha256": "1b92f2f02dcb6f5d703d8d1fe715404f40be1ef26371a622f4894e89eabcef46",
+      "imports": [
+        "ModifiedCartan.InsertedTabloids"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TabloidRowCutoff.lean",
+      "sha256": "cd496dd37f1031101e48f242fab0a5ec6a6184254487829977b7059caf30ad3b",
+      "imports": [
+        "ModifiedCartan.SupportedPermutations",
+        "ModifiedCartan.FillingCoefficients"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TotalTranspositionDeletion.lean",
+      "sha256": "49cb1fee0b715191a73d441ceabcd8ab12c8423f46ffb303f91cdf3873221f22",
+      "imports": [
+        "ModifiedCartan.TotalTranspositionElement",
+        "ModifiedCartan.KPAlphaFullInduction",
+        "ModifiedCartan.SymmetricPairErasureModule",
+        "Mathlib.GroupTheory.Perm.Support"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TotalTranspositionElement.lean",
+      "sha256": "c90346c98f40d19a064e0f39a86daf160ad2d31da5972c6aa380d7f23030d994",
+      "imports": [
+        "ModifiedCartan.PermutationStar"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TotalTranspositionOperator.lean",
+      "sha256": "242ad8c5667eb4a5adf73db8994270c7c873675acdf44a1e708cbd53523ccb36",
+      "imports": [
+        "ModifiedCartan.TotalTranspositionElement",
+        "ModifiedCartan.ClassWeightedOperator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TotalTranspositionReindex.lean",
+      "sha256": "4f5b6e2ce13ee88763b025425db3d8837591ae37eef40bf4c39d7abdc5473c17",
+      "imports": [
+        "ModifiedCartan.YoungTranspositionScalar",
+        "ModifiedCartan.SpechtFiniteAlphabetRepresentation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TraceSurjectiveKernel.lean",
+      "sha256": "3fa0009ee806f808e3f5e8f11fe1ce58b156ec8c2325fc01bc90043e3639df60",
+      "imports": [
+        "Mathlib.LinearAlgebra.Trace",
+        "Mathlib.LinearAlgebra.Basis.VectorSpace",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TransitivePermutationSign.lean",
+      "sha256": "f87bf1df96273f4fe8c41e27f841894c42b1cff0026e7b2f2c817fcf99eae9fe",
+      "imports": [
+        "ModifiedCartan.CycleColorings"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TransitiveSigmaColorings.lean",
+      "sha256": "ed924d9e1888b95af64775c9c08ee201e05f830ce51c54bfccea0f960b23d231",
+      "imports": [
+        "ModifiedCartan.FixedColoringTransport",
+        "Mathlib.Data.Fintype.BigOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TranslatedDifferentialKernel.lean",
+      "sha256": "4286b1e333447cb064a78a833d4dd9bc47b426a27d066ff9b96b849112e3e678",
+      "imports": [
+        "ModifiedCartan.MvPolynomialTranslationJets",
+        "ModifiedCartan.KPJointShiftedContraction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TwoBlockWeightedSum.lean",
+      "sha256": "39e1dbaa08aa29136e61bc35c81fa061f4f3a0e2977ddcbc3907d205ffb5b591",
+      "imports": [
+        "ModifiedCartan.SupportedPermutations"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/TwoBoxSpechtDistinction.lean",
+      "sha256": "430f8e9aa89855872201b0fdb07e495a5760b163618bba392d6c95b856f03e80",
+      "imports": [
+        "ModifiedCartan.RowColumnFiniteCharacters",
+        "ModifiedCartan.CornerPredecessors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/UniversalPolynomialMinors.lean",
+      "sha256": "77e0b5d1f0a336069cff34e4218220da153a5fc779e1d987860e4793793479b8",
+      "imports": [
+        "ModifiedCartan.PolynomialSpaceSchubert",
+        "ModifiedCartan.SchubertUniversalMinors"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/UpwardTableauDimension.lean",
+      "sha256": "765299a471e56f9997410404030222d07836341c0f0e5704018b28c7ef108d39",
+      "imports": [
+        "ModifiedCartan.WeightedYoungDifferential",
+        "ModifiedCartan.RankedTableauDimension"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/VandermondeAlternantMaps.lean",
+      "sha256": "33048c1272b3763bd897f9a7cafdd3c2c5789f6d16c8e78df57f1159ab4257d8",
+      "imports": [
+        "ModifiedCartan.FiniteAlternants",
+        "ModifiedCartan.FiniteCauchyDeterminant",
+        "Mathlib.Data.Fin.Rev",
+        "Mathlib.Algebra.Ring.Int.Units"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/WeightColoringRepresentation.lean",
+      "sha256": "4362d45c1786c35decb0716f6893be814c497ea0ede5e69b4f83edf73a114164",
+      "imports": [
+        "ModifiedCartan.ColoringDegrees",
+        "ModifiedCartan.FinitePermutationCharacter"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/WeightedBurnside.lean",
+      "sha256": "e3cb875354c9f2f207ac503fdabadaa600136a1a8b0b17c36aabc745b61d1343",
+      "imports": [
+        "Mathlib.GroupTheory.GroupAction.Quotient",
+        "Mathlib.Algebra.Module.BigOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/WeightedColoringBurnside.lean",
+      "sha256": "28b4ad32d03d0068062975087e96e90d62e053215e9176b2cba34b34e5e757bf",
+      "imports": [
+        "ModifiedCartan.ColoringOrbits",
+        "ModifiedCartan.FixedColoringTransport"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/WeightedOrthogonalTriangularity.lean",
+      "sha256": "372d63262337fb3ba1ab789a5ea7e83102df0fabd2efb492439b92c9340e1fea",
+      "imports": [
+        "Mathlib.Data.Complex.Basic",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/WeightedYoungDifferential.lean",
+      "sha256": "799bdeb5b04f913560bcb6c817f930d17c47a78d3592345b1dbb5e9f453c55b2",
+      "imports": [
+        "ModifiedCartan.RankedYoungCoverEquivs",
+        "ModifiedCartan.FiniteCommonNeighborSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/WronskianNontrivial.lean",
+      "sha256": "ced2c23ec21f06676fdb33922eabaead02615054149f28a678a5a6d15d7ad27f",
+      "imports": [
+        "ModifiedCartan.CanonicalGauge"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungAlternatingHermitian.lean",
+      "sha256": "f71ad1ae95fe6b09a0471893b1b30226946db7ffcb8fab42facc96ef022843e8",
+      "imports": [
+        "ModifiedCartan.YoungTabloidInnerProduct",
+        "ModifiedCartan.YoungAlternatingOperator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungAlternatingOperator.lean",
+      "sha256": "126b74097053fcd9a938a53480929adaaf2affe75d14bf9b829784d67528a027",
+      "imports": [
+        "ModifiedCartan.YoungColumnAlternation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungAlternatingRange.lean",
+      "sha256": "cbc1b9b85ee03bd9137c37b8846c46d8e6d6ed1af12b0c062a5f3894f8e1e1b4",
+      "imports": [
+        "ModifiedCartan.YoungTabloidCancellation",
+        "ModifiedCartan.YoungColumnOrbit",
+        "ModifiedCartan.YoungSpechtModule"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungBoxFiberCounts.lean",
+      "sha256": "7711d102e4c6c80f9e530aafbd1fbf9b43b6175ae525573af3872a4505f222a2",
+      "imports": [
+        "ModifiedCartan.YoungTranspositionScalar",
+        "ModifiedCartan.FixedPointPermutationSums"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungColoringMinimum.lean",
+      "sha256": "f20e5deeb1957ea9e07d75510bf8bae2a234a1a85f1516c7cfbbaa4b4c2c3a6c",
+      "imports": [
+        "ModifiedCartan.WeightColoringRepresentation",
+        "ModifiedCartan.YoungColumnMinimum",
+        "ModifiedCartan.YoungColumnOrbit"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungColoringVanishing.lean",
+      "sha256": "5a27e168d805fce67379765d27102309b3ddc79d903b23ad1522fc9bf1c00396",
+      "imports": [
+        "ModifiedCartan.YoungColoringMinimum",
+        "ModifiedCartan.ColoringColumnCancellation",
+        "ModifiedCartan.YoungSpechtGenerator"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungColumnAlternation.lean",
+      "sha256": "b6c274b427b390f7e1f37391cc0a8febfd1df927848772405912e8a20454a40f",
+      "imports": [
+        "ModifiedCartan.YoungPolytabloid"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungColumnMinimum.lean",
+      "sha256": "df6db9401050300f5d694ce0b48a41e753d6ddf81d66df296b994296872a534e",
+      "imports": [
+        "ModifiedCartan.YoungColumns",
+        "ModifiedCartan.FiniteRowMinimum"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungColumnOrbit.lean",
+      "sha256": "c86516fa4e0b4636bd456edba8d3a90a203f1cbd2bdd75b777221b71452428e7",
+      "imports": [
+        "ModifiedCartan.YoungColumnMinimum",
+        "ModifiedCartan.YoungTabloidRows"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungColumns.lean",
+      "sha256": "8c6eef7e22d28fc1f5b03807e81ab6ed08e66279dd25311cb0d40102e9707113",
+      "imports": [
+        "ModifiedCartan.YoungPermutationSubgroups"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungCornerRowDrops.lean",
+      "sha256": "881f505072f4991071e736c8e409c3c3701bdf4bb3ff554f7c398a488edb0c62",
+      "imports": [
+        "ModifiedCartan.PartitionCorners"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungFillingWeight.lean",
+      "sha256": "4dd321c7c6e25f24b7675ac897fc4e7ee611c05d1a3f186726a5af449e1d1ea0",
+      "imports": [
+        "ModifiedCartan.GarnirMixing",
+        "ModifiedCartan.TwoBlockWeightedSum",
+        "ModifiedCartan.ColumnSorting"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungFillings.lean",
+      "sha256": "36af9a81e7dfd3b9f0a9c28dce967747d2da6b2d891224be5b91482626bf1dcf",
+      "imports": [
+        "ModifiedCartan.YoungPermutationSubgroups"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungFrobeniusCoefficients.lean",
+      "sha256": "87502c04e069d0de76aa86f3d27c29509a31f7cc73dbdc7514fce102f559b35e",
+      "imports": [
+        "ModifiedCartan.FrobeniusCoefficientMultiplicity"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungHeightCollision.lean",
+      "sha256": "81b6a185aa6f106d6a4dbcfcadcbbe26c48d277b5604cd7df0e34dce45d8888c",
+      "imports": [
+        "ModifiedCartan.YoungColoringMinimum"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungLatticeDifferential.lean",
+      "sha256": "8b228992c4ad013a946ce902ccf102fecfd5f3010ceaf07eeb3094f32b253a09",
+      "imports": [
+        "ModifiedCartan.YoungSuccessorCount",
+        "ModifiedCartan.YoungPredecessorCount",
+        "ModifiedCartan.PartitionCommonCoverGeometry"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungPermutationSubgroups.lean",
+      "sha256": "fb535604b6d211ee0ef416c0b721a3fc2edc66ed08e6fa146db43959f0177016",
+      "imports": [
+        "ModifiedCartan.SkewTableaux",
+        "Mathlib.GroupTheory.Coset.Basic",
+        "Mathlib.GroupTheory.GroupAction.Quotient",
+        "Mathlib.GroupTheory.Perm.Sign",
+        "Mathlib.RepresentationTheory.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungPolytabloid.lean",
+      "sha256": "d23bb3459a15094ea9f2699529ac1187752b374da1bbdd3661878a785198b336",
+      "imports": [
+        "ModifiedCartan.YoungPermutationSubgroups",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Defs",
+        "Mathlib.RepresentationTheory.Subrepresentation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungPredecessorCount.lean",
+      "sha256": "036166b9947310c4a8a6dac7d6e0a011bbc8901656ca5b0d643f9b5d493a8c06",
+      "imports": [
+        "ModifiedCartan.PartitionCovers",
+        "ModifiedCartan.SizedYoungDiagrams"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungRowDegrees.lean",
+      "sha256": "be3927d71a5ff5f414da973bd88573066fc4d7fbcf2811ecdc49fb19403ecc72",
+      "imports": [
+        "ModifiedCartan.YoungColoringMinimum"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungSpechtGenerator.lean",
+      "sha256": "2bc8d49ed6ba0c978e37aa33abb4bbf587600ebcdf3d3761d4b8bb53af65b53d",
+      "imports": [
+        "ModifiedCartan.SpechtRepresentation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungSpechtIrreducible.lean",
+      "sha256": "9f0d4cf8e566303bfea68a1408a2970e429ac95413e1e2f98b06c72c6035c130",
+      "imports": [
+        "ModifiedCartan.YoungSpechtSubmoduleTheorem"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungSpechtModule.lean",
+      "sha256": "526bd9d17e4b2cbba95e5e3ec00cc597560d5efa6db4caa41677b7c58c9e9cb1",
+      "imports": [
+        "ModifiedCartan.YoungPolytabloid"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungSpechtSubmoduleTheorem.lean",
+      "sha256": "df1e563f1fd4d7bcb07601a9603db1f0508752d1691d659487c74148bab6e8e9",
+      "imports": [
+        "ModifiedCartan.YoungAlternatingHermitian",
+        "ModifiedCartan.YoungAlternatingRange"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungSuccessorCount.lean",
+      "sha256": "be7ae2220e64ba13cc06e7c8b97f39db0634ab3970121160311014708d1f36c4",
+      "imports": [
+        "ModifiedCartan.PartitionCoverAddition",
+        "ModifiedCartan.AddableRowsCornerEquiv",
+        "ModifiedCartan.SizedYoungDiagrams"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungSwapCoefficient.lean",
+      "sha256": "5a31ad4e7e7510cbf169c48c2c47eb518ef25d674904c3a8293e823635a37850",
+      "imports": [
+        "ModifiedCartan.YoungTabloidCancellation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungTabloidCancellation.lean",
+      "sha256": "d30d6a01a22a2859a3be057152bdc60478670d44b497ec91022ff1949a239e2e",
+      "imports": [
+        "ModifiedCartan.YoungAlternatingOperator",
+        "ModifiedCartan.YoungTabloidRows"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungTabloidInnerProduct.lean",
+      "sha256": "7597e18e274b651ceea53894ef3df505fe2f346e6b8f8eb976342f034d5719bd",
+      "imports": [
+        "ModifiedCartan.YoungPolytabloid",
+        "ModifiedCartan.CharacterOrthogonalInvariant",
+        "Mathlib.Analysis.InnerProductSpace.PiL2"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungTabloidRows.lean",
+      "sha256": "e1d633ea45a61f04b9b03bb8bd9b267f964da0fb2f76e0009a93d1e0f5d3a265",
+      "imports": [
+        "ModifiedCartan.YoungPermutationSubgroups"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungTabloidWeight.lean",
+      "sha256": "171995ff7b796bb9e24d2f8813914d0c433f60f9fbe33f6f14a602295860adda",
+      "imports": [
+        "ModifiedCartan.FillingCoefficients",
+        "ModifiedCartan.ColumnRearrangement"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungTranspositionCorner.lean",
+      "sha256": "37d8940b9433046642919461d4de433970af89abe1f092d462c8076ceca9f2cc",
+      "imports": [
+        "ModifiedCartan.YoungBoxFiberCounts",
+        "ModifiedCartan.SymmetricPairDeletion",
+        "ModifiedCartan.RemovedBoxes"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/YoungTranspositionScalar.lean",
+      "sha256": "a194ff25d656de29c5948393157c6354e9ccc97151506a6542f39721e65a234f",
+      "imports": [
+        "ModifiedCartan.YoungSwapCoefficient",
+        "ModifiedCartan.TotalTranspositionOperator",
+        "ModifiedCartan.YoungSpechtIrreducible"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZAdmissibleSets.lean",
+      "sha256": "67b5bbc5e456ec739faabfc701c74a6006b4068e155e606ea2369d0f4abc75eb",
+      "imports": [
+        "ModifiedCartan.RightZFactors",
+        "ModifiedCartan.ZStripComplement"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZComplementLaurentProduct.lean",
+      "sha256": "e2b57baea670c552b7a9dd8b20efe818c5d676023630fec2a0120467626c80b3",
+      "imports": [
+        "ModifiedCartan.ZCycleSupportFiniteness",
+        "ModifiedCartan.CycleSubsetLaurentProduct",
+        "ModifiedCartan.FiniteAlphabetShift"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZConstructedRightFactor.lean",
+      "sha256": "d2f87bc6d59fdc195f80722985ce3802e74ee1adcc17890d62d8424fe3d79974",
+      "imports": [
+        "ModifiedCartan.ZPrefixPermutations",
+        "ModifiedCartan.InvariantSupportedPermutations"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZCycleSupportCard.lean",
+      "sha256": "ac35688b84ee97c6bbce167075a28a29f7dce605f9fa5712ec3652832d1667a8",
+      "imports": [
+        "ModifiedCartan.ZCycleSupportParameters",
+        "ModifiedCartan.CompositionResidueTransport"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZCycleSupportFiniteness.lean",
+      "sha256": "d628587ae1f908ba95801eb9e07d9b5fe099d80c2eea939db923d2fd141f23cd",
+      "imports": [
+        "ModifiedCartan.ZCycleSupportParameters",
+        "Mathlib.Data.Fintype.Powerset"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZCycleSupportParameters.lean",
+      "sha256": "743a533bee5e558a2ff2e0c19ef1f9732fa4ef590bc01e2dc303e743cb7bafc3",
+      "imports": [
+        "ModifiedCartan.ZSupportParameters",
+        "ModifiedCartan.InvariantCycleSubsets"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZFactorCardParity.lean",
+      "sha256": "b6e6c33d9d90126b7dcae83658a6c1ccb36d9a3f0616503edef8996e3560dfb3",
+      "imports": [
+        "ModifiedCartan.ZCycleSupportCard",
+        "ModifiedCartan.CycleUnionSignTwist",
+        "ModifiedCartan.ZFactorSets"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZFactorDirectSum.lean",
+      "sha256": "cd5e9d749293c1f098d2b368552406fb71e2cdb9c9acddc27c225bb5107c4679",
+      "imports": [
+        "ModifiedCartan.ZSupportCoordinates",
+        "ModifiedCartan.SupportedPermutationRestrictions"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZFactorPowerSums.lean",
+      "sha256": "b6c17242b2a9b41f732904b8ce4493aea8b45eb90651352e5a01b11d619add6a",
+      "imports": [
+        "ModifiedCartan.ZFactorDirectSum",
+        "ModifiedCartan.FixedColoringDirectSum",
+        "ModifiedCartan.SignedBlockInflation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZFactorSets.lean",
+      "sha256": "d7e45bb07dd645ebdbc71e83ad6d331aacea362bb55dd4cf82037cd582403429",
+      "imports": [
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Data.Fintype.Card",
+        "Mathlib.Tactic.Tauto"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZFactorSign.lean",
+      "sha256": "30ab8fd875d6734e7864d8b345a4a877541432633afed03d3486256e843d7955",
+      "imports": [
+        "ModifiedCartan.ZFactorDirectSum",
+        "ModifiedCartan.SigmaPermutationSign"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZFactorizationLaurentSeries.lean",
+      "sha256": "5173c315831684312f3ec19c564d2ec4a65bbf1dd64783d2708bef9aca9ec987",
+      "imports": [
+        "ModifiedCartan.ZFactorizationParameters",
+        "ModifiedCartan.RightZFactorLaurentSeries"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZFactorizationParameters.lean",
+      "sha256": "858b88c1277c78296b171f58fe474decd8048006786f9b0ed4937a5d24dcb327",
+      "imports": [
+        "ModifiedCartan.RightZFactors",
+        "Mathlib.Data.Fintype.Powerset"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZFactorizationResidue.lean",
+      "sha256": "1bf9e4858459656679e47b91951dd24d8ad17cff7333898f7eb92eee031d99fb",
+      "imports": [
+        "ModifiedCartan.ZFactorizationLaurentSeries",
+        "ModifiedCartan.RightZFactorResidue"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZPrefixPermutations.lean",
+      "sha256": "8e5f16cbbb81599e03acd233a30d5fb2de344ec7d94d1bca4e63ae9d255c15e4",
+      "imports": [
+        "ModifiedCartan.ZSupportReconstruction",
+        "ModifiedCartan.BlockInflation"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZPrefixSets.lean",
+      "sha256": "e0b6ace6f5617d649dc711785a2fab571d09079b50fc2151998042aa25426359",
+      "imports": [
+        "ModifiedCartan.ZStripPrefixLength"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZStripComplement.lean",
+      "sha256": "d9c6dff9d5131fc9b88e63f64f966821103c302559f6bdf611ef60e2f459d40b",
+      "imports": [
+        "ModifiedCartan.ZStripUnion"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZStripEmbedding.lean",
+      "sha256": "e8f5e64f317597fe439093011654eeb905e12de8ded87454db0692d2cdd8ddcb",
+      "imports": [
+        "ModifiedCartan.ZStripLength"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZStripLength.lean",
+      "sha256": "4591cb3aad94b1fa9ed0fdc97d11036e77bde16f3eeb6efa51554844380fcbd5",
+      "imports": [
+        "Mathlib.GroupTheory.OrderOfElement",
+        "Mathlib.GroupTheory.Perm.Sign",
+        "Mathlib.Data.Finset.Basic"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZStripPrefixLength.lean",
+      "sha256": "5084a39bfff1c4e02493157d216da863d4be61353e0d918eda4a5453cd1e0aa6",
+      "imports": [
+        "ModifiedCartan.ZAdmissibleSets"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZStripUnion.lean",
+      "sha256": "3db9bcc961c51bc955216b7419b3eea7e0b8d68b73a36c2bd8be3850f85b4426",
+      "imports": [
+        "ModifiedCartan.ZStripEmbedding",
+        "Mathlib.Data.Fintype.BigOperators"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZSupportCoordinates.lean",
+      "sha256": "bde07899efc2595418ac8ae644c824d14fe0470a379d66c5d9dc8010f01d968d",
+      "imports": [
+        "ModifiedCartan.ZConstructedRightFactor"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZSupportLaurentNormalization.lean",
+      "sha256": "16a11ed67b238f7ec3f320d7518f26902ba1fbcfd7877b6f03cec13a78f7e36c",
+      "imports": [
+        "ModifiedCartan.RightZFactorLaurentSeries"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZSupportParameters.lean",
+      "sha256": "49b03074d87fa394552204b06e9b1331f6460c319fa66454ef1214a11f7ec371",
+      "imports": [
+        "ModifiedCartan.ZSupportReconstruction"
+      ]
+    },
+    {
+      "path": "ModifiedCartan/ZSupportReconstruction.lean",
+      "sha256": "c05bd796ea31a082ef9a9d34d27c6356606b94cec054715e0c3f7a1aec6540f9",
+      "imports": [
+        "ModifiedCartan.ZPrefixSets"
+      ]
+    }
+  ]
+}

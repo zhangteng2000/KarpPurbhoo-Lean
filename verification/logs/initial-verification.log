@@ -1,0 +1,19 @@
+SOURCE CHECK PASSED: 571 extracted modules; hashes and import closure match.
+Project source placeholder scan passed.
+Running: lake build
+Build completed successfully (4394 jobs).
+Running: lake env lean verification/AllDeclarations.lean
+AUDIT PASSED: 4108 declarations, including 3423 theorem declarations.
+Actual logical dependencies: [Quot.sound, Classical.choice, propext].
+Running: lake env lean verification/KPResults.lean
+'ModifiedCartan.Paper.lem_plucker_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.kpBeta_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.kpBeta_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.kpBeta_mem_generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.kpGeneratedAlgebra_eq_betheAlgebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.Paper.lem_KP_correspondence_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.Paper.lem_KP_correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.Paper.lem_character_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.specht_character_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ModifiedCartan.specht_character_expectation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+VERIFICATION PASSED: independent build, exact source extraction, complete dependency audit and KP result checks.

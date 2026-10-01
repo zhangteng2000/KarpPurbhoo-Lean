@@ -1,0 +1,107 @@
+ModifiedCartan.Paper.lem_plucker_translation {n m : ℕ} {ω : YoungDiagram} {V : Submodule ℂ (Polynomial ℂ)}
+  (hV : V ∈ ModifiedCartan.polynomialSchubertCell n m ω) (μ : YoungDiagram) (a t : ℂ) :
+  ModifiedCartan.normalizedSchubertCoordinate hV μ (a + t) =
+    ∑ ν,
+      ↑(ModifiedCartan.standardSkewTableauCount (↑ν) μ) /
+            ↑(ModifiedCartan.partitionSize ↑ν - ModifiedCartan.partitionSize μ).factorial *
+          t ^ (ModifiedCartan.partitionSize ↑ν - ModifiedCartan.partitionSize μ) *
+        ModifiedCartan.normalizedSchubertCoordinate hV (↑ν) a
+'ModifiedCartan.Paper.lem_plucker_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.kpBeta_commute {N : ℕ} (z : Fin N → ℂ) (μ ν : YoungDiagram) (a b : ℂ) :
+  Commute (ModifiedCartan.kpBeta μ z a) (ModifiedCartan.kpBeta ν z b)
+'ModifiedCartan.kpBeta_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.kpBeta_translation.{u_1} {A : Type u_1} [Fintype A] [DecidableEq A] (μ : YoungDiagram) (z : A → ℂ)
+  (a t : ℂ) :
+  ModifiedCartan.kpBeta μ z (a + t) =
+    ∑ ν,
+      (↑(ModifiedCartan.standardSkewTableauCount (↑ν) μ) /
+            ↑(ModifiedCartan.partitionSize ↑ν - ModifiedCartan.partitionSize μ).factorial *
+          t ^ (ModifiedCartan.partitionSize ↑ν - ModifiedCartan.partitionSize μ)) •
+        ModifiedCartan.kpBeta (↑ν) z a
+'ModifiedCartan.kpBeta_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.kpBeta_mem_generated.{u_1} {A : Type u_1} [Fintype A] [DecidableEq A] (μ : YoungDiagram) (z : A → ℂ)
+  (a : ℂ) : ModifiedCartan.kpBeta μ z a ∈ ModifiedCartan.kpGeneratedAlgebra z
+'ModifiedCartan.kpBeta_mem_generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.kpGeneratedAlgebra_eq_betheAlgebra {M : ℕ} (hM : 0 < M) (z : Fin M → ℂ) :
+  ModifiedCartan.kpGeneratedAlgebra z = ModifiedCartan.betheAlgebra z
+'ModifiedCartan.kpGeneratedAlgebra_eq_betheAlgebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.Paper.lem_KP_correspondence_ii {M n D : ℕ} (hM : 0 < M) (τ : YoungDiagram)
+  (hτ : Fintype.card (Fin M) = ModifiedCartan.partitionSize τ) (hf : ModifiedCartan.PartitionFits n τ)
+  (hD : n + 1 + τ.rowLen 0 ≤ D) (z : Fin M → ℂ) :
+  (∀ (E : Submodule ℂ ↥(ModifiedCartan.YoungSpechtModule τ)),
+      ModifiedCartan.IsCommonEigenspace (ModifiedCartan.spechtRepresentationOn τ hτ).asAlgebraHom
+          (ModifiedCartan.kpGeneratedAlgebra z) E →
+        ∃ V,
+          ∃ (hV : V ∈ ModifiedCartan.polynomialSchubertCell n D τ),
+            (∀ (μ : YoungDiagram),
+                ∀ v ∈ E,
+                  ((ModifiedCartan.spechtRepresentationOn τ hτ).asAlgebraHom (ModifiedCartan.kpBeta μ z 0)) v =
+                    ModifiedCartan.normalizedSchubertCoordinate hV μ 0 • v) ∧
+              ModifiedCartan.schubertMonicWronskian hV = ∏ i, (Polynomial.X + Polynomial.C (z i))) ∧
+    ∀ (V : Submodule ℂ (Polynomial ℂ)) (hV : V ∈ ModifiedCartan.polynomialSchubertCell n D τ),
+      ModifiedCartan.schubertMonicWronskian hV = ∏ i, (Polynomial.X + Polynomial.C (z i)) →
+        ∃ E,
+          ModifiedCartan.IsCommonEigenspace (ModifiedCartan.spechtRepresentationOn τ hτ).asAlgebraHom
+              (ModifiedCartan.kpGeneratedAlgebra z) E ∧
+            ∀ (μ : YoungDiagram),
+              ∀ v ∈ E,
+                ((ModifiedCartan.spechtRepresentationOn τ hτ).asAlgebraHom (ModifiedCartan.kpBeta μ z 0)) v =
+                  ModifiedCartan.normalizedSchubertCoordinate hV μ 0 • v
+'ModifiedCartan.Paper.lem_KP_correspondence_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.Paper.lem_KP_correspondence {M n D : ℕ} (hM : 0 < M) (τ : YoungDiagram)
+  (hτ : Fintype.card (Fin M) = ModifiedCartan.partitionSize τ) (hf : ModifiedCartan.PartitionFits n τ)
+  (hD : n + 1 + τ.rowLen 0 ≤ D) (z : Fin M → ℂ) :
+  (∀ (μ ν : YoungDiagram) (a b : ℂ),
+      ModifiedCartan.kpBeta μ z a * ModifiedCartan.kpBeta ν z b =
+        ModifiedCartan.kpBeta ν z b * ModifiedCartan.kpBeta μ z a) ∧
+    (∀ (μ : YoungDiagram) (a : ℂ), ModifiedCartan.kpBeta μ z a ∈ ModifiedCartan.kpGeneratedAlgebra z) ∧
+      ModifiedCartan.kpGeneratedAlgebra z = ModifiedCartan.betheAlgebra z ∧
+        (∀ (μ : YoungDiagram) (a t : ℂ),
+            ModifiedCartan.kpBeta μ z (a + t) =
+              ∑ ν,
+                (↑(ModifiedCartan.standardSkewTableauCount (↑ν) μ) /
+                      ↑(ModifiedCartan.partitionSize ↑ν - ModifiedCartan.partitionSize μ).factorial *
+                    t ^ (ModifiedCartan.partitionSize ↑ν - ModifiedCartan.partitionSize μ)) •
+                  ModifiedCartan.kpBeta (↑ν) z a) ∧
+          (∀ (E : Submodule ℂ ↥(ModifiedCartan.YoungSpechtModule τ)),
+              ModifiedCartan.IsCommonEigenspace (ModifiedCartan.spechtRepresentationOn τ hτ).asAlgebraHom
+                  (ModifiedCartan.kpGeneratedAlgebra z) E →
+                ∃ V,
+                  ∃ (hV : V ∈ ModifiedCartan.polynomialSchubertCell n D τ),
+                    (∀ (μ : YoungDiagram),
+                        ∀ v ∈ E,
+                          ((ModifiedCartan.spechtRepresentationOn τ hτ).asAlgebraHom (ModifiedCartan.kpBeta μ z 0)) v =
+                            ModifiedCartan.normalizedSchubertCoordinate hV μ 0 • v) ∧
+                      ModifiedCartan.schubertMonicWronskian hV = ∏ i, (Polynomial.X + Polynomial.C (z i))) ∧
+            ∀ (V : Submodule ℂ (Polynomial ℂ)) (hV : V ∈ ModifiedCartan.polynomialSchubertCell n D τ),
+              ModifiedCartan.schubertMonicWronskian hV = ∏ i, (Polynomial.X + Polynomial.C (z i)) →
+                ∃ E,
+                  ModifiedCartan.IsCommonEigenspace (ModifiedCartan.spechtRepresentationOn τ hτ).asAlgebraHom
+                      (ModifiedCartan.kpGeneratedAlgebra z) E ∧
+                    ∀ (μ : YoungDiagram),
+                      ∀ v ∈ E,
+                        ((ModifiedCartan.spechtRepresentationOn τ hτ).asAlgebraHom (ModifiedCartan.kpBeta μ z 0)) v =
+                          ModifiedCartan.normalizedSchubertCoordinate hV μ 0 • v
+'ModifiedCartan.Paper.lem_KP_correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.Paper.lem_character_projection.{u_1, u_2, u_3} {ι : Type u_1} {V : Type u_2} {W : Type u_3} [Fintype ι]
+  [DecidableEq ι] [AddCommGroup V] [Module ℂ V] [FiniteDimensional ℂ V] [NormedAddCommGroup W] [InnerProductSpace ℂ W]
+  [FiniteDimensional ℂ W] (ρ : Representation ℂ (Equiv.Perm ι) V) (π : Representation ℂ (Equiv.Perm ι) W)
+  [ρ.IsIrreducible] (hπ : ModifiedCartan.IsUnitaryRepresentation π) :
+  (ρ.character 1 / ↑(Fintype.card ι).factorial) • ModifiedCartan.permutationCharacterOperator ρ π =
+    ↑(ModifiedCartan.irreducibleCopiesSubmodule ρ π).starProjection
+'ModifiedCartan.Paper.lem_character_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.specht_character_projection.{u_1} {W : Type u_1} [NormedAddCommGroup W] [InnerProductSpace ℂ W]
+  [FiniteDimensional ℂ W] (μ : YoungDiagram)
+  (π : Representation ℂ (Equiv.Perm (Fin (ModifiedCartan.partitionSize μ))) W)
+  (hπ : ModifiedCartan.IsUnitaryRepresentation π) :
+  (↑(ModifiedCartan.standardSkewTableauCount μ ⊥) / ↑(ModifiedCartan.partitionSize μ).factorial) •
+      ModifiedCartan.permutationCharacterOperator (ModifiedCartan.spechtRepresentation μ) π =
+    ↑(ModifiedCartan.irreducibleCopiesSubmodule (ModifiedCartan.spechtRepresentation μ) π).starProjection
+'ModifiedCartan.specht_character_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+ModifiedCartan.specht_character_expectation_bound.{u_1} {W : Type u_1} [NormedAddCommGroup W] [InnerProductSpace ℂ W]
+  [FiniteDimensional ℂ W] (μ : YoungDiagram)
+  (π : Representation ℂ (Equiv.Perm (Fin (ModifiedCartan.partitionSize μ))) W)
+  (hπ : ModifiedCartan.IsUnitaryRepresentation π) (v : W) (hv : ‖v‖ = 1) :
+  ‖inner ℂ v ((ModifiedCartan.permutationCharacterOperator (ModifiedCartan.spechtRepresentation μ) π) v)‖ ≤
+    ↑(ModifiedCartan.partitionSize μ).factorial
+'ModifiedCartan.specht_character_expectation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
